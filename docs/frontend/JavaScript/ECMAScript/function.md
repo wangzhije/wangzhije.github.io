@@ -1,1 +1,0 @@
-# JavaScript 一等公民 Function
