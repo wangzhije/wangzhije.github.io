@@ -1,7 +1,7 @@
 {
   "name": "wangzhije.github.io",
   "version": "1.0.0",
-  "description": "frontend developer map notes",
+  "description": "roadmap developer notes",
   "scripts": {
     "start": "npm run docs:dev",
     "docs:dev": "vuepress dev docs",
@@ -15,7 +15,9 @@
     "frontend",
     "developer",
     "roadmap",
-    "notes"
+    "notes",
+    "vuepress",
+    "docsify"
   ],
   "author": "wangzhijie",
   "license": "ISC",
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/wangzhije/wangzhije.github.io#readme",
   "devDependencies": {
+    "docsify-cli": "^4.4.4",
     "vuepress": "^1.9.7"
   }
 }

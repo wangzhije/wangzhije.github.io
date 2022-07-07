@@ -1,5 +1,6 @@
 # node modules
 node_modules
+./docsify/node_modules
 
 # MacOS desktop services store
 .DS_Store

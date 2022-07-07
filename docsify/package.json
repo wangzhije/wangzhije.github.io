@@ -1,0 +1,22 @@
+{
+  "name": "docsify-github.io",
+  "version": "1.0.0",
+  "description": "roadmap developer notes",
+  "scripts": {
+    "init": "docsify init",
+    "dev": "docsify serve --open"
+  },
+  "keywords": [
+    "frontend",
+    "developer",
+    "roadmap",
+    "notes",
+    "vuepress",
+    "docsify"
+  ],
+  "author": "wangzhijie",
+  "license": "ISC",
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
