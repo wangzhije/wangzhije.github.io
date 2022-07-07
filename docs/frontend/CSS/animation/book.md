@@ -1,3 +1,10 @@
 # 翻页特效
 
-`<iframe src="/book.html"></iframe>`
+<iframe  
+ height=850 
+ width=90% 
+ src="./book1.html"  
+ frameborder=0  
+ allowfullscreen>
+ 
+</iframe>
