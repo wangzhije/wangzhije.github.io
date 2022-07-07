@@ -40,6 +40,15 @@ module.exports = {
             children: [
             ]
           },
+          {
+            title: '特效',
+            sidebarDepth: 2,
+            collapsable: true,
+            children: [
+              'CSS/animation/book.md',
+              'CSS/animation/book.html',
+            ]
+          },
         ]
       },
       {
