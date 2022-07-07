@@ -7,15 +7,13 @@ set -e
 npm run docs:build
 
 # 进入生成的文件夹
-cd docs/.vuepress/wangzhije
+# cd docs/.vuepress/dist
 
 # 
-git remote add origin https://github.com/wangzhije/wangzhije.github.io.git
-git pull --rebase https://github.com/wangzhije/wangzhije.github.io.git main
 git add .
 git commit -m "auto deploy"
 git push
 
 
-cd ../
-rm -rf wangzhije
+# cd ../
+# rm -rf wangzhije
