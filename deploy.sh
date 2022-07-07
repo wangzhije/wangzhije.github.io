@@ -13,6 +13,6 @@ set -e
 # git pull --rebase https://wangzhije:WZJforever22411%24%40github.com/wangzhije/wangzhije.github.io.git main
 git add .
 git commit -m "auto deploy"
-git push https://wangzhije:WZJforever22411$@github.com/wangzhije/wangzhije.github.io.git
+git push https://github.com/wangzhije/wangzhije.github.io.git
 # git push -f https://wangzhije:WZJforever22411%24%40github.com/wangzhije/wangzhije.github.io.git
 
