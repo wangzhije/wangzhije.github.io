@@ -8,7 +8,6 @@
 
 常用的静态网站建站工具
 
-- WordPress
 - <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a> 之前用过，根据官网教程能很快上手
 - <a href="https://docsify.js.org/" target="_blank">Docsify</a> 说到快速上手，我觉得 Docsify 是最轻量、最简单、最快速的了
 - <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 现在因为想深入学习 Vue 和 VuePress 源码，现在换成了 VuePress
@@ -32,19 +31,3 @@
   这个估计更不用介绍，不少技术电子书文档都是用它来做的
 
 总的来说，这几个我都简单用过，具体选哪个呢？看自己需求吧。
-
-## VuePress
-
-请看 [VuePress 静态网站搭建](!https://wangzhije.github.io/blog/frontend/Vue/VuePress/start.html)
-
-## Docsify
-
-为了不想使用 VuePress 的人不白白浪费事件点进来看看，也记录下 Docsify 的使用，也许看完你立马就想搭建一个自己的博客网站呢 ^^
-
-- 前置条件
-  - Node 环境和 npm 工具
-  - 如果没有，<a href="https://nodejs.org/" target="_blank">Node.js 官网</a>直接下载安装 Node.js 环境即可，包含 npm 工具
-- 安装 Docsify `npm install -g docsify-cli`
-- 新建项目文件夹 `mkdir repository`
-- 进入项目目录，进行初始化 `docsify init`
-- 本地预览 `docsify serve`，浏览器打开 `http://localhost:3000` 即可
