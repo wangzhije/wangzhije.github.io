@@ -7,7 +7,7 @@
 - [DTD](!https://developer.mozilla.org/zh-CN/docs/Glossary/DTD)
 </div>
 
-## 历史发展
+历史发展
 
 第一次浏览器大战，两个主要阵营
 
@@ -48,4 +48,6 @@
       `
   - HTML5，标准推荐
     - 唯一的作用是启用标准模式，用于保证文档正常读取
-    - `<!DOCTYPE html>`
+    ```HTML
+      <!DOCTYPE html>
+    ```

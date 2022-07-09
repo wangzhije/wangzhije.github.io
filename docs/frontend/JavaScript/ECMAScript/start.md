@@ -48,7 +48,7 @@ Firefox4.0：V8 之后 Firefox 也推出了具备强大功能的 js 引擎，Fir
 
 > JavaScript = ECMAScript + DOM + BOM
 
-![JavaScript组成](./../../../.vuepress/public/1.png)
+![JavaScript组成](../../../images/js/1.png)
 
 ### ECMAScript
 
