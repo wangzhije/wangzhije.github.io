@@ -53,7 +53,7 @@ module.exports = [
     sidebarDepth: 3,
     collapsable: true,
     children: [
-      "JavaScript/",
+      "JavaScript/start.md",
       {
         title: "ECMAScript",
         sidebarDepth: 2,
@@ -114,6 +114,7 @@ module.exports = [
         children: [],
       },
       "JavaScript/comment.md",
+      "JavaScript/",
     ],
   },
   {
