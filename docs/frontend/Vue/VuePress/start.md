@@ -31,7 +31,7 @@
 
 ### markdown 中使用 Vue
 
-> `.vuepress/components` 中引用的 .vue 文件将会自动地被注册为全局的异步组件页面中直接使用  
+> `.vuepress/components` 中引用的 .vue 文件将会自动地被注册为全局的异步组件页面中直接使用
 
 使用场景
 
@@ -88,3 +88,9 @@ git commit -m "auto deploy"
 git push https://github.com/wangzhije/wangzhije.github.io.git
 
 ```
+
+Github Actions
+
+- 创建 Github access token
+- 在你 github 仓库下，创建一个 secrets (opens new window)，填入刚创建的 token
+- 在项目根目录下的 .github/workflows 目录（没有的话，请手动创建一个）下创建一个 .yml 或者 .yaml 文件，如:vuepress-deploy.yml;

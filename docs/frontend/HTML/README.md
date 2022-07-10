@@ -15,7 +15,7 @@
   - 实体引用：转义字符
 - HTML 信息架构：网站通用结构组成
 
-### [link 标签属性](!./../Element/link.md)
+### [link 标签属性](!./../element/link.md)
 
 - `rel`
   - `stylesheet`：加载 CSS

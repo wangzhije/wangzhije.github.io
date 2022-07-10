@@ -14,7 +14,9 @@ module.exports = {
   base: '/blog/',
   dest: './blog/',
   extraWatchFiles: ['.vuepress/config/**'],
-  themeConfig: { // 默认主题配置
+  // 默认主题配置
+  themeConfig: {
+    // 国际化-多语言支持
     locales: {
       '/': {
         label: '简体中文',
@@ -34,10 +36,11 @@ module.exports = {
         nav: NavItems4EN,
         sidebar: Sidebar4EN
       }
-    }, // 国际化-多语言支持
+    },
     smoothScroll: true,
     lastUpdated: true,
     editLinks: true, // 编辑地址 Github
+    repo: 'https://github.com/wangzhije/wangzhije.github.io.git',
   },
   locales: {
     '/': {

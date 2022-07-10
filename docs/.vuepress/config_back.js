@@ -1,31 +1,7 @@
-
-const nav = [
-  {
-    text: '前端',
-    link: '/frontend/'
-  }
-]
-const roadmap = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Vue',
-  'React',
-]
-const sidebar = [
-  {
-    title: '前端',
-    path: ''
-  }
-];
-
-
 module.exports = {
   // 
   temp: '',
-  shouldPrefetch: function(){
-
-  },
+  shouldPrefetch: function(){},
   // dev
   host: '0.0.0.0',
   port: '9000',

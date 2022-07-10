@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="div-description">
-      <img src="./images/desktop.jpg" alt="">
+      <img src="../img/desktop.jpg" alt="">
     </div>
     <div class="div-form" :class="tab == 'register' ? 'transform' : ''">
         <form action="" class="form-login" :class="tab == 'register' ? 'disappear' : ''">
@@ -24,7 +24,7 @@
         </form>
     </div>
     <div class="div-description">
-      <img src="./images/desktop.jpg" alt="">
+      <img src="../img/desktop.jpg" alt="">
     </div>
   </div>
 </template>
