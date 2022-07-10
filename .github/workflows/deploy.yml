@@ -21,13 +21,18 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+      
+    - name: Set Node.js 16.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
 
     - name: deploy
       uses: actions/deploy-pages@main
-      env:
-        ACCESS_TOKEN: ${{ secrets.IO_DEPLOY }}
-        TARGET_REPO: wangzhije/wangzhije.github.io
-        TARGET_BRANCH: main
-        BUILD_SCRIPT: npm && npm run docs:build
-        BUILD_DIR: /blog
+      # env:
+      #   ACCESS_TOKEN: ${{ secrets.IO_DEPLOY }}
+      #   TARGET_REPO: wangzhije/wangzhije.github.io
+      #   TARGET_BRANCH: main
+      #   BUILD_SCRIPT: npm && npm run docs:build
+      #   BUILD_DIR: /blog
         # CNAME: https://www.xxx.com
