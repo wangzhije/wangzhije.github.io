@@ -31,4 +31,5 @@ Password: your_token
 
 3. 点击 Generate token，生成 token，复制一下，备用
 <!-- `githubio deploy: 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` -->
+<!-- `IO_DEPLOY: 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` -->
 4. **切记，务必复制一下这个 token，否则之后只能编辑权限，找不到 token 值了，只能重新创建；**
