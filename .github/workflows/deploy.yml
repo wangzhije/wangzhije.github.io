@@ -31,7 +31,7 @@ jobs:
     - name: deploy
       uses: actions/deploy-pages@main
       env:
-        ACCESS_TOKEN: ${{ secrets.githubio deploy }}
+        ACCESS_TOKEN: ${{ secrets.deploy }}
         TARGET_REPO: wangzhije/wangzhije.github.io
         TARGET_BRANCH: main
         BUILD_SCRIPT: npm && npm run docs:build
