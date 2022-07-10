@@ -22,9 +22,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: build
-      uses: actions/jekyll-build-pages@main
-
     - name: deploy
       uses: actions/deploy-pages@main
       env:
