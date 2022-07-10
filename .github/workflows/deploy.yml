@@ -25,9 +25,6 @@ jobs:
     - name: build
       uses: actions/jekyll-build-pages@main
 
-    - name: report-build-status
-      uses: actions/deploy-pages@main
-
     - name: deploy
       uses: actions/deploy-pages@main
       env:
