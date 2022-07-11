@@ -5,21 +5,21 @@
     </div>
     <div class="div-form" :class="tab == 'register' ? 'transform' : ''">
         <form action="" class="form-login" :class="tab == 'register' ? 'disappear' : ''">
-            <h1>login</h1>
+            <h1>登录</h1>
             <input type="text" placeholder="帐号">
             <input type="password" placeholder="密码">
-            <button type="submit">Login</button>
+            <button type="submit">登录</button>
             <div class="control">
-              <span>没有帐号？<a href="#" @click="changeTab('register')">Register</a></span>
+              <span>没有帐号？<a href="#" @click="changeTab('register')">注册</a></span>
             </div>
         </form>
         <form action="" class="form-register" :class="tab == 'login' ? 'disappear' : ''">
-            <h1>Register</h1>
+            <h1>注册</h1>
             <input type="text" placeholder="帐号">
             <input type="password" placeholder="密码">
-            <button type="submit">Register</button>
+            <button type="submit">注册</button>
             <div class="control">
-              <span>已有帐号？<a href="#" @click="changeTab('login')">Login</a></span>
+              <span>已有帐号？<a href="#" @click="changeTab('login')">登录</a></span>
             </div>
         </form>
     </div>

@@ -1,6 +1,6 @@
 
 const basic = require('./modules/basic')
-const frontend = require('./modules/fe')
+const frontend = require('./modules/fed')
 const common = require('./modules/common')
 
 module.exports = {

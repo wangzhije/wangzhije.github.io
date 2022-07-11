@@ -24,6 +24,7 @@ module.exports = {
       text: "前端",
       link: '/frontend/',
       items: [
+        { text: "内容概览", link: "/frontend/" },
         { text: "HTML", link: "/frontend/HTML/" },
         { text: "CSS", link: "/frontend/CSS/" },
         { text: "JavaScript", link: "/frontend/JavaScript/" },
@@ -32,6 +33,8 @@ module.exports = {
         { text: "Vue", link: "/frontend/Vue/" },
         { text: "React", link: "/frontend/React/" },
         { text: "Node.js", link: "/frontend/Node/" },
+        { text: "前端工程化", link: "/frontend/Project/" },
+        { text: "前端性能优化", link: "/frontend/Performance/" },
         // { text: "小程序", link: "/frontend/Node/" },
         // { text: "公众号", link: "/frontend/Node/" },
       ],
