@@ -121,10 +121,12 @@ module.exports = [
   },
   {
     title: "浏览器",
-    sidebarDepth: 2,
+    sidebarDepth: 1,
     collapsable: true,
     children: [
-      'Browser/'
+      'Browser/',
+      'Browser/start.md',
+      'Browser/process.md',
     ],
   },
   {
@@ -190,6 +192,14 @@ module.exports = [
     collapsable: true,
     children: [
       'React/'
+    ],
+  },
+  {
+    title: "Typescript",
+    sidebarDepth: 2,
+    collapsable: true,
+    children: [
+      'Typescript/'
     ],
   },
   {

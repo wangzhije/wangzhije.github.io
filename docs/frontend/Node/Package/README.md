@@ -1,14 +1,17 @@
 # package 包管理工具
 
-常用 package 包管理器
+## 常用 package 包管理器
 
 - npm
-  - <a href="https://docs.npmjs.com/" targe="_blank">npm 官方文档</a>
-  - <a href="https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-operation-order" targe="_blank">npm 生命周期</a>
+  - [npm 官方文档](https://docs.npmjs.com/)
+  - [npm 生命周期](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-operation-order)
 - cnpm
 - yarn
-  - <a href="https://classic.yarnpkg.com/en/docs" targe="_blank">yarn 官方文档</a>
+  - [yarn 官方文档](https://classic.yarnpkg.com/en/docs)
 - pnpm
+  - [pnpm 官方文档](https://www.pnpm.cn/)
+- Lerna 多包管理
+  - [Lerna 官方文档](https://github.com/lerna/lerna)
 
 ## 限制 package 管理器
 

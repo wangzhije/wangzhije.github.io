@@ -6,7 +6,7 @@ module.exports = {
       items: [
         { text: "计算机网络", link: "/basic/Internet/" },
         { text: "数据结构与算法", link: "/basic/Algorithm/" },
-        { text: '数据库', link: '/frontend/Database/' },
+        { text: '数据库', link: '/basic/Database/' },
       ],
     },
     {
