@@ -29,6 +29,7 @@ module.exports = {
         { text: "CSS", link: "/frontend/CSS/" },
         { text: "JavaScript", link: "/frontend/JavaScript/" },
         { text: "浏览器", link: "/frontend/Browser/" },
+        { text: "ES6 +", link: "/frontend/ES6/" },
         { text: "Webpack", link: "/frontend/Webpack/" },
         { text: "Vue", link: "/frontend/Vue/" },
         { text: "React", link: "/frontend/React/" },

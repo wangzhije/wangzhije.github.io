@@ -81,17 +81,6 @@ module.exports = [
         ],
       },
       {
-        title: "ES6 +",
-        sidebarDepth: 1,
-        collapsable: true,
-        children: [
-          // 'syntax',
-          // 'oop',
-          // 'ES6'
-          'JavaScript/ecmascript/es2022'
-        ],
-      },
-      {
         title: "模块化",
         sidebarDepth: 2,
         collapsable: true,
@@ -124,9 +113,20 @@ module.exports = [
     sidebarDepth: 1,
     collapsable: true,
     children: [
-      'Browser/',
       'Browser/start.md',
+      'Browser/htmlRender.md',
+      'Browser/cssRender.md',
+      'Browser/render.md',
       'Browser/process.md',
+      'Browser/',
+    ],
+  },
+  {
+    title: "ES6 +",
+    sidebarDepth: 1,
+    collapsable: true,
+    children: [
+      'ES6/es2022'
     ],
   },
   {

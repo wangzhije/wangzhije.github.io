@@ -45,7 +45,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh',
-      title: '个人笔记',
+      title: '个人知识库',
       description: '开发者路线学习记录',
     },
     '/en/': {
