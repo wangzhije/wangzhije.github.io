@@ -1,6 +1,7 @@
 # 网站搭建快速（个人博客/知识库文档 ）
 
 [Github Pages](https://wangzhije.github.io/blog/)
+
 [阿里云](http://wangzhijie.top/blog/)
 
 > 目的
