@@ -60,6 +60,7 @@ Vue3 源码
 
 ```JavaScript
 // preinstall.js
+// 主要是根据 node env npm 环境变量判断
 const isPnpm = /pnpm/.test(process.env.npm_execpath || '')
 if (!isPnpm) {
   console.warn('当前包管理器不是 pnpm'); // 命令行打印信息
