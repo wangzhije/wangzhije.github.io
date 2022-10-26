@@ -1,5 +1,23 @@
 module.exports = [
   {
+    title: "Linux",
+    sidebarDepth: 3,
+    collapsable: true,
+    children: [
+      'Linux/',
+      {
+        title: "环境准备",
+        sidebarDepth: 2,
+        collapsable: true,
+        children: [
+          "Linux/env/vmware",
+          "Linux/env/cloudserver",
+          "Linux/env/connection",
+        ],
+      },
+    ],
+  },
+  {
     title: "计算机网络",
     sidebarDepth: 3,
     collapsable: true,

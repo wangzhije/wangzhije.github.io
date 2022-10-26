@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>了解设计模式 | 个人知识库</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="开发者路线学习记录">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.fe919e6d.css" as="style"><link rel="preload" href="/blog/assets/js/app.e681bebb.js" as="script"><link rel="preload" href="/blog/assets/js/2.bf2b853a.js" as="script"><link rel="preload" href="/blog/assets/js/64.bb00badc.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.09a233ac.js"><link rel="prefetch" href="/blog/assets/js/11.74727b14.js"><link rel="prefetch" href="/blog/assets/js/12.32498603.js"><link rel="prefetch" href="/blog/assets/js/13.7a27f6c1.js"><link rel="prefetch" href="/blog/assets/js/14.3b0a3206.js"><link rel="prefetch" href="/blog/assets/js/15.6e82bc84.js"><link rel="prefetch" href="/blog/assets/js/16.c4e75603.js"><link rel="prefetch" href="/blog/assets/js/17.2905ba37.js"><link rel="prefetch" href="/blog/assets/js/18.f4896202.js"><link rel="prefetch" href="/blog/assets/js/19.5f6a6592.js"><link rel="prefetch" href="/blog/assets/js/20.c62d7842.js"><link rel="prefetch" href="/blog/assets/js/21.635469b6.js"><link rel="prefetch" href="/blog/assets/js/22.17693823.js"><link rel="prefetch" href="/blog/assets/js/23.b577b9e7.js"><link rel="prefetch" href="/blog/assets/js/24.d206c345.js"><link rel="prefetch" href="/blog/assets/js/25.70be50eb.js"><link rel="prefetch" href="/blog/assets/js/26.0312361e.js"><link rel="prefetch" href="/blog/assets/js/27.75ef40bf.js"><link rel="prefetch" href="/blog/assets/js/28.2c647250.js"><link rel="prefetch" href="/blog/assets/js/29.88fa93d9.js"><link rel="prefetch" href="/blog/assets/js/3.eac6e89c.js"><link rel="prefetch" href="/blog/assets/js/30.874e6429.js"><link rel="prefetch" href="/blog/assets/js/31.56f7aaa5.js"><link rel="prefetch" href="/blog/assets/js/32.abff2d8b.js"><link rel="prefetch" href="/blog/assets/js/33.63bc7582.js"><link rel="prefetch" href="/blog/assets/js/34.05122545.js"><link rel="prefetch" href="/blog/assets/js/35.8cc2239c.js"><link rel="prefetch" href="/blog/assets/js/36.932600da.js"><link rel="prefetch" href="/blog/assets/js/37.354c103d.js"><link rel="prefetch" href="/blog/assets/js/38.6d9a2d48.js"><link rel="prefetch" href="/blog/assets/js/39.116e67c7.js"><link rel="prefetch" href="/blog/assets/js/4.390d3b8d.js"><link rel="prefetch" href="/blog/assets/js/40.97d73e2b.js"><link rel="prefetch" href="/blog/assets/js/41.cf8d5473.js"><link rel="prefetch" href="/blog/assets/js/42.7f609170.js"><link rel="prefetch" href="/blog/assets/js/43.b9312cd3.js"><link rel="prefetch" href="/blog/assets/js/44.ad549c7d.js"><link rel="prefetch" href="/blog/assets/js/45.dca29102.js"><link rel="prefetch" href="/blog/assets/js/46.65e90de0.js"><link rel="prefetch" href="/blog/assets/js/47.11bb4ecf.js"><link rel="prefetch" href="/blog/assets/js/48.7d9b26f5.js"><link rel="prefetch" href="/blog/assets/js/49.0e39ee79.js"><link rel="prefetch" href="/blog/assets/js/5.877d17db.js"><link rel="prefetch" href="/blog/assets/js/50.dcfe32f0.js"><link rel="prefetch" href="/blog/assets/js/51.56bdd6ca.js"><link rel="prefetch" href="/blog/assets/js/52.de6d17fa.js"><link rel="prefetch" href="/blog/assets/js/53.28009278.js"><link rel="prefetch" href="/blog/assets/js/54.547348d1.js"><link rel="prefetch" href="/blog/assets/js/55.ac17bb50.js"><link rel="prefetch" href="/blog/assets/js/56.1abdc139.js"><link rel="prefetch" href="/blog/assets/js/57.47e2e501.js"><link rel="prefetch" href="/blog/assets/js/58.2c56b5b2.js"><link rel="prefetch" href="/blog/assets/js/59.92d6d947.js"><link rel="prefetch" href="/blog/assets/js/6.bff03716.js"><link rel="prefetch" href="/blog/assets/js/60.60c5819b.js"><link rel="prefetch" href="/blog/assets/js/61.6bdffc7f.js"><link rel="prefetch" href="/blog/assets/js/62.2d7e9af3.js"><link rel="prefetch" href="/blog/assets/js/63.e691f5e4.js"><link rel="prefetch" href="/blog/assets/js/65.4313f0f5.js"><link rel="prefetch" href="/blog/assets/js/66.bdf694a4.js"><link rel="prefetch" href="/blog/assets/js/67.4dc6b843.js"><link rel="prefetch" href="/blog/assets/js/68.9848b527.js"><link rel="prefetch" href="/blog/assets/js/69.b8b130f1.js"><link rel="prefetch" href="/blog/assets/js/7.34c7f0e9.js"><link rel="prefetch" href="/blog/assets/js/70.08c4fc9d.js"><link rel="prefetch" href="/blog/assets/js/71.2ea56a69.js"><link rel="prefetch" href="/blog/assets/js/72.1958dab4.js"><link rel="prefetch" href="/blog/assets/js/73.53b0c200.js"><link rel="prefetch" href="/blog/assets/js/74.1d7bf3e2.js"><link rel="prefetch" href="/blog/assets/js/75.75332fe3.js"><link rel="prefetch" href="/blog/assets/js/76.35dff852.js"><link rel="prefetch" href="/blog/assets/js/77.27d89d5b.js"><link rel="prefetch" href="/blog/assets/js/78.24b70c6f.js"><link rel="prefetch" href="/blog/assets/js/79.f609bb61.js"><link rel="prefetch" href="/blog/assets/js/8.8fbc994c.js"><link rel="prefetch" href="/blog/assets/js/80.961a9a6e.js"><link rel="prefetch" href="/blog/assets/js/81.07b376d4.js"><link rel="prefetch" href="/blog/assets/js/82.fb3c6050.js"><link rel="prefetch" href="/blog/assets/js/83.0fd321db.js"><link rel="prefetch" href="/blog/assets/js/84.bea1028b.js"><link rel="prefetch" href="/blog/assets/js/85.fb30f437.js"><link rel="prefetch" href="/blog/assets/js/86.5c4d9e0e.js"><link rel="prefetch" href="/blog/assets/js/87.033f2c2a.js"><link rel="prefetch" href="/blog/assets/js/88.5afac41c.js"><link rel="prefetch" href="/blog/assets/js/89.8229397e.js"><link rel="prefetch" href="/blog/assets/js/9.ae29af75.js"><link rel="prefetch" href="/blog/assets/js/90.853c00b9.js"><link rel="prefetch" href="/blog/assets/js/91.25143798.js"><link rel="prefetch" href="/blog/assets/js/92.559b8a54.js"><link rel="prefetch" href="/blog/assets/js/93.44c544d3.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.fe919e6d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">个人知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/Linux/" class="nav-link">
+    Linux
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Internet/" class="nav-link">
+    计算机网络
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Algorithm/" class="nav-link">
+    数据结构与算法
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Database/" class="nav-link">
+    数据库
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="通用知识" class="dropdown-title"><span class="title">通用知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="通用知识" class="mobile-dropdown-title"><span class="title">通用知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/common/Git/" class="nav-link">
+    Git
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link router-link-active">
+    内容概览
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/HTML/" class="nav-link">
+    HTML
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/CSS/" class="nav-link">
+    CSS
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/JavaScript/" class="nav-link router-link-active">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Browser/" class="nav-link">
+    浏览器
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/ES6/" class="nav-link">
+    ES6 +
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Webpack/" class="nav-link">
+    Webpack
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Vue/" class="nav-link">
+    Vue
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/React/" class="nav-link">
+    React
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Node/" class="nav-link">
+    Node.js
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Project/" class="nav-link">
+    前端工程化
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Performance/" class="nav-link">
+    前端性能优化
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/JavaScript/designPatterns/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+    简体中文
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/en/" class="nav-link">
+    English
+  </a></li></ul></div></div> <a href="https://github.com/wangzhije/wangzhije.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      GitHub
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/Linux/" class="nav-link">
+    Linux
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Internet/" class="nav-link">
+    计算机网络
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Algorithm/" class="nav-link">
+    数据结构与算法
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/basic/Database/" class="nav-link">
+    数据库
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="通用知识" class="dropdown-title"><span class="title">通用知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="通用知识" class="mobile-dropdown-title"><span class="title">通用知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/common/Git/" class="nav-link">
+    Git
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link router-link-active">
+    内容概览
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/HTML/" class="nav-link">
+    HTML
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/CSS/" class="nav-link">
+    CSS
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/JavaScript/" class="nav-link router-link-active">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Browser/" class="nav-link">
+    浏览器
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/ES6/" class="nav-link">
+    ES6 +
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Webpack/" class="nav-link">
+    Webpack
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Vue/" class="nav-link">
+    Vue
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/React/" class="nav-link">
+    React
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Node/" class="nav-link">
+    Node.js
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Project/" class="nav-link">
+    前端工程化
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/frontend/Performance/" class="nav-link">
+    前端性能优化
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/JavaScript/designPatterns/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+    简体中文
+  </a></li><li class="dropdown-item"><!----> <a href="/blog/en/" class="nav-link">
+    English
+  </a></li></ul></div></div> <a href="https://github.com/wangzhije/wangzhije.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      GitHub
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>个人记录</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6 +</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>模块化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/frontend/JavaScript/designPatterns/" aria-current="page" class="active sidebar-link">了解设计模式</a></li><li><a href="/blog/frontend/JavaScript/designPatterns/basic.html" class="sidebar-link">从面向过程到面向对象</a></li><li><a href="/blog/frontend/JavaScript/designPatterns/oop.html" class="sidebar-link">JavaScript 面向对象</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript函数式编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node.js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Typescript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端性能优化</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="了解设计模式"><a href="#了解设计模式" class="header-anchor">#</a> 了解设计模式</h1> <p>你有没有这样的感觉 ...<br>
+看一些经典的源码，总会觉得，别人的代码简明而且灵活，自己的代码缺臃肿而且难懂...</p> <p>学习设计模式，可以一定程度解决这个问题，使我们的代码更加简明，更加便于维护，这也是代码质量的一个重要指标。</p> <h2 id="什么是设计模式"><a href="#什么是设计模式" class="header-anchor">#</a> 什么是设计模式</h2> <blockquote><p>设计模式(design pattern)，是对面向对象设计中反复出现的问题的解决方案。</p></blockquote> <h2 id="历史来源"><a href="#历史来源" class="header-anchor">#</a> 历史来源</h2> <p>设计模式这个术语是上个世纪 90 年代由 Erich Gamma、Richard Helm、Raplh Johnson 和 Jonhn Vlissides 四个人总结提炼出来的，并且写了一本 Design Patterns 的书。这四人也被称为四人帮（GoF）。</p> <h2 id="为什么使用设计模式"><a href="#为什么使用设计模式" class="header-anchor">#</a> 为什么使用设计模式</h2> <p>为什么要使用设计模式？根本原因还是软件开发要实现可维护、可扩展，就必须尽量复用代码，并且降低代码的耦合度。</p> <h2 id="设计模式的原则"><a href="#设计模式的原则" class="header-anchor">#</a> 设计模式的原则</h2> <p>设计模式主要是基于 OOP 编程提炼的，它基于以下几个原则：</p> <h3 id="开闭原则"><a href="#开闭原则" class="header-anchor">#</a> 开闭原则</h3> <p>由 Bertrand Meyer 提出的开闭原则（Open Closed Principle）是指，软件应该对扩展开放，而对修改关闭。这里的意思是在增加新功能的时候，能不改代码就尽量不要改，如果只增加代码就完成了新功能，那是最好的。</p> <h3 id="里氏替换原则"><a href="#里氏替换原则" class="header-anchor">#</a> 里氏替换原则</h3> <p>里氏替换原则是 Barbara Liskov 提出的，这是一种面向对象的设计原则，即如果我们调用一个父类的方法可以成功，那么替换成子类调用也应该完全可以运行。</p> <h3 id="巨人的肩膀"><a href="#巨人的肩膀" class="header-anchor">#</a> 巨人的肩膀</h3> <p>设计模式把一些常用的设计思想提炼出一个个模式，然后给每个模式命名，这样在使用的时候更方便交流。<br>
+GoF 把 23 个常用模式分为创建型模式、结构型模式和行为型模式三类，我们后续会一一讲解。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/wangzhije/wangzhije.github.io.git/edit/master/frontend/JavaScript/designPatterns/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/frontend/ES6/es2022.html" class="prev">
+          ES 2022
+        </a></span> <span class="next"><a href="/blog/frontend/JavaScript/designPatterns/basic.html">
+          从面向过程到面向对象
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.e681bebb.js" defer></script><script src="/blog/assets/js/2.bf2b853a.js" defer></script><script src="/blog/assets/js/64.bb00badc.js" defer></script>
+  </body>
+</html>

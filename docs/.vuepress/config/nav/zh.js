@@ -4,6 +4,7 @@ module.exports = {
       text: "计算机基础",
       link: '/basic/',
       items: [
+        { text: "Linux", link: "/basic/Linux/" },
         { text: "计算机网络", link: "/basic/Internet/" },
         { text: "数据结构与算法", link: "/basic/Algorithm/" },
         { text: '数据库', link: '/basic/Database/' },
@@ -14,7 +15,6 @@ module.exports = {
       link: '/common/',
       items: [
         { text: "Git", link: "/common/Git/" },
-        { text: "Linux", link: "/common/Linux/" },
         // { text: 'Github', link: '/frontend/Github/' },
         // { text: 'Gitlab', link: '/frontend/Gitlab/' },
         // { text: 'Gitee', link: '/frontend/Gitee/' },

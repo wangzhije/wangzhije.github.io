@@ -1,11 +1,16 @@
-module.exports = [
-  '',
+const FED_SIDEBAR = [
+  // "",
+  {
+    title: "个人记录",
+    sidebarDepth: 0,
+    collapsable: false
+  },
   {
     title: "HTML",
     sidebarDepth: 3,
     collapsable: true,
     children: [
-      'HTML/start.md',
+      "HTML/start.md",
       {
         title: "文档结构",
         sidebarDepth: 2,
@@ -80,68 +85,95 @@ module.exports = [
           // 'JavaScript/DOM/event'
         ],
       },
-      {
-        title: "模块化",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "数据结构与算法",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "设计模式",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "函数式编程",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
       "JavaScript/comment.md",
       "JavaScript/",
-    ],
-  },
-  {
-    title: "浏览器",
-    sidebarDepth: 1,
-    collapsable: true,
-    children: [
-      'Browser/start.md',
-      'Browser/htmlRender.md',
-      'Browser/cssRender.md',
-      'Browser/render.md',
-      'Browser/process.md',
-      'Browser/',
     ],
   },
   {
     title: "ES6 +",
     sidebarDepth: 1,
     collapsable: true,
+    children: ["ES6/es2022"],
+  },
+  {
+    title: "模块化",
+    sidebarDepth: 2,
+    collapsable: true,
+    children: [],
+  },
+  {
+    title: "JavaScript数据结构与算法",
+    sidebarDepth: 2,
+    collapsable: true,
+    children: [],
+  },
+  {
+    title: "JavaScript设计模式",
+    sidebarDepth: 0,
+    collapsable: true,
     children: [
-      'ES6/es2022'
+      "JavaScript/designPatterns/",
+      "JavaScript/designPatterns/basic.md",
+      "JavaScript/designPatterns/oop.md"
+    ],
+  },
+  {
+    title: "JavaScript函数式编程",
+    sidebarDepth: 2,
+    collapsable: true,
+    children: [],
+  },
+  {
+    title: "浏览器",
+    sidebarDepth: 1,
+    collapsable: true,
+    children: [
+      "Browser/start.md",
+      "Browser/htmlRender.md",
+      "Browser/cssRender.md",
+      "Browser/render.md",
+      "Browser/process.md",
+      "Browser/",
+    ],
+  },
+  {
+    title: "Node.js",
+    sidebarDepth: 3,
+    collapsable: true,
+    children: [
+      {
+        title: "基础",
+        sidebarDepth: 2,
+        collapsable: true,
+        children: [],
+      },
+      {
+        title: "包管理",
+        sidebarDepth: 1,
+        collapsable: true,
+        children: [
+          "Node/package/",
+          "Node/package/json.md",
+          "Node/package/cnpm.md",
+          "Node/package/yarn.md",
+          "Node/package/pnpm.md",
+          "Node/package/nodeModules.md",
+        ],
+      },
     ],
   },
   {
     title: "Webpack",
     sidebarDepth: 2,
     collapsable: true,
-    children: [
-      'Webpack/'
-    ],
+    children: ["Webpack/"],
   },
   {
     title: "Vue",
     sidebarDepth: 3,
     collapsable: true,
     children: [
+      "Vue/",
       {
         title: "框架使用",
         sidebarDepth: 2,
@@ -190,57 +222,26 @@ module.exports = [
     title: "React",
     sidebarDepth: 2,
     collapsable: true,
-    children: [
-      'React/'
-    ],
+    children: ["React/"],
   },
   {
     title: "Typescript",
     sidebarDepth: 2,
     collapsable: true,
-    children: [
-      'Typescript/'
-    ],
-  },
-  {
-    title: "Node.js",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      {
-        title: "基础",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "包管理",
-        sidebarDepth: 1,
-        collapsable: true,
-        children: [
-          "Node/package/",
-          "Node/package/json.md",
-          "Node/package/cnpm.md",
-          "Node/package/yarn.md",
-          "Node/package/pnpm.md",
-          "Node/package/nodeModules.md",
-        ],
-      },
-    ],
+    children: ["Typescript/"],
   },
   {
     title: "前端工程化",
     sidebarDepth: 2,
     collapsable: true,
-    children: [
-      "Project/workflow.md",
-    ],
+    children: ["Project/workflow.md"],
   },
   {
     title: "前端性能优化",
     sidebarDepth: 2,
     collapsable: true,
-    children: [
-    ]
+    children: [],
   },
 ];
+
+module.exports = FED_SIDEBAR;
