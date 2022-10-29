@@ -1,59 +1,11 @@
+const HTML_SIDEBAR = require('./fed/html.js')
+const CSS_SIDEBAR = require('./fed/html.js')
+
+
 const FED_SIDEBAR = [
-  // "",
-  {
-    title: "个人记录",
-    sidebarDepth: 0,
-    collapsable: false
-  },
-  {
-    title: "HTML",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      "HTML/start.md",
-      {
-        title: "文档结构",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [
-          "HTML/element/DTD",
-          "HTML/element/link",
-          "HTML/element/script",
-        ],
-      },
-      "HTML/metaAll.md",
-      "HTML/linkAll.md",
-      "HTML/",
-    ],
-  },
-  {
-    title: "CSS",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      {
-        title: "基础",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "CSS3+",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "特效",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [
-          "CSS/animation/book.md",
-          // 'CSS/animation/book1.html',
-        ],
-      },
-    ],
-  },
+  "",
+  HTML_SIDEBAR,
+  CSS_SIDEBAR,
   {
     title: "JavaScript",
     sidebarDepth: 3,
@@ -158,6 +110,28 @@ const FED_SIDEBAR = [
           "Node/package/yarn.md",
           "Node/package/pnpm.md",
           "Node/package/nodeModules.md",
+        ],
+      },
+    ],
+  },
+  {
+    title: "可视化",
+    sidebarDepth: 4,
+    collapsable: true,
+    children: [
+      // {
+      //   title: "基础",
+      //   sidebarDepth: 2,
+      //   collapsable: true,
+      //   children: [],
+      // },
+      {
+        title: "SVG",
+        sidebarDepth: 3,
+        collapsable: true,
+        children: [
+          "Visual/svg/intro.md",
+          "Visual/svg/start.md"
         ],
       },
     ],

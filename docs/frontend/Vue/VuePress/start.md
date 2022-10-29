@@ -46,12 +46,6 @@
 
 ```
 
-```
-# CSS 书本翻页特效
-
-<animation-book />
-```
-
 ## 部署
 
 ### GitHub Pages

@@ -1,45 +1,57 @@
 <template>
   <div class="container">
     <div class="div-description">
-      <img src="../img/desktop.jpg" alt="">
+      <img src="../img/desktop.jpg" alt="" />
     </div>
     <div class="div-form" :class="tab == 'register' ? 'transform' : ''">
-        <form action="" class="form-login" :class="tab == 'register' ? 'disappear' : ''">
-            <h1>登录</h1>
-            <input type="text" placeholder="帐号">
-            <input type="password" placeholder="密码">
-            <button type="submit">登录</button>
-            <div class="control">
-              <span>没有帐号？<a href="#" @click="changeTab('register')">注册</a></span>
-            </div>
-        </form>
-        <form action="" class="form-register" :class="tab == 'login' ? 'disappear' : ''">
-            <h1>注册</h1>
-            <input type="text" placeholder="帐号">
-            <input type="password" placeholder="密码">
-            <button type="submit">注册</button>
-            <div class="control">
-              <span>已有帐号？<a href="#" @click="changeTab('login')">登录</a></span>
-            </div>
-        </form>
+      <form
+        action=""
+        class="form-login"
+        :class="tab == 'register' ? 'disappear' : ''"
+      >
+        <h1>登录</h1>
+        <input type="text" placeholder="帐号" />
+        <input type="password" placeholder="密码" />
+        <button type="submit">登录</button>
+        <div class="control">
+          <span
+            >没有帐号？<a href="#" @click="changeTab('register')">注册</a></span
+          >
+        </div>
+      </form>
+      <form
+        action=""
+        class="form-register"
+        :class="tab == 'login' ? 'disappear' : ''"
+      >
+        <h1>注册</h1>
+        <input type="text" placeholder="帐号" />
+        <input type="password" placeholder="密码" />
+        <button type="submit">注册</button>
+        <div class="control">
+          <span
+            >已有帐号？<a href="#" @click="changeTab('login')">登录</a></span
+          >
+        </div>
+      </form>
     </div>
     <div class="div-description">
-      <img src="../img/desktop.jpg" alt="">
+      <img src="../img/desktop.jpg" alt="" />
     </div>
   </div>
 </template>
-  <script>
+<script>
 export default {
   data() {
     return {
-      tab: 'login'
+      tab: "login",
     };
   },
   methods: {
-    changeTab(val){
-      this.tab = val
+    changeTab(val) {
+      this.tab = val;
     },
-  }
+  },
 };
 </script>
 <style scoped>
