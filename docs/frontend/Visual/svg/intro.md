@@ -1,4 +1,4 @@
-# SVG 基本了解
+# 基本了解
 
 > 可缩放矢量图形，是 W3C XML 的分支语言之一，用于标记可缩放的矢量图形
 
@@ -7,6 +7,13 @@
 SVG 是一种 XML 语言，类似 XHTML
 
 SVG 诞生于 1999 年
+
+## SVG 的应用
+
+- 图表视图(echart)、地图视图(WEB-GIS)
+- 形象(AI)的全网应用
+- UI 产品的设计
+- SVG 动画
 
 ## SVG 优缺点
 
@@ -50,9 +57,7 @@ Vary: Accept-Encoding
 ## 基本语法
 
 ```SVG
-<svg xmlns="http://www.w3.org/2000/svg"
-  width="300"
-  height="200">
+<svg xmlns="http://www.w3.org/2000/svg">
   <title>svg</title>
   <desc>svg start</desc>
   // 绘制图形

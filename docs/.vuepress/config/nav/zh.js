@@ -24,7 +24,6 @@ module.exports = {
       text: "前端",
       link: '/frontend/',
       items: [
-        { text: "内容概览", link: "/frontend/" },
         { text: "HTML", link: "/frontend/HTML/" },
         { text: "CSS", link: "/frontend/CSS/" },
         { text: "JavaScript", link: "/frontend/JavaScript/" },

@@ -1,46 +1,40 @@
-const HTML_SIDEBAR = require('./fed/html.js')
-const CSS_SIDEBAR = require('./fed/html.js')
+// 自动遍历子目录，并获取对象
+// let fs = require('fs');
+// let path = require('path');
+// let rootDir = __dirname
+// let fed = path.resolve(__dirname, 'fed/');
+// fs.readdir(fed,(err, files) =>{
+//   console.log(err, files)
+// })
 
+const HTML_SIDEBAR = require("./fed/html.js");
+const CSS_SIDEBAR = require("./fed/css.js");
+const JS_SIDEBAR = require("./fed/js.js");
+const BROWSER_SIDEBAR = require("./fed/browser.js");
+const NODE_SIDEBAR = require("./fed/node.js");
+const VISUAL_SIDEBAR = require("./fed/visual.js");
+const WEBPACK_SIDEBAR = require("./fed/webpack.js");
+const VUE_SIDEBAR = require("./fed/vue.js");
+const REACT_SIDEBAR = require("./fed/react.js");
+const TS_SIDEBAR = require("./fed/ts.js");
+const ENGINEER_SIDEBAR = require("./fed/engineer.js");
+const PERFORMANCE_SIDEBAR = require("./fed/performance.js");
 
 const FED_SIDEBAR = [
   "",
   HTML_SIDEBAR,
   CSS_SIDEBAR,
-  {
-    title: "JavaScript",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      "JavaScript/start.md",
-      {
-        title: "ECMAScript",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [
-          "JavaScript/ecmascript/syntax.md",
-          "JavaScript/ecmascript/object.md",
-          "JavaScript/ecmascript/function.md",
-          "JavaScript/ecmascript/oop.md",
-        ],
-      },
-      {
-        title: "BOM",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "DOM",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [
-          // 'JavaScript/DOM/event'
-        ],
-      },
-      "JavaScript/comment.md",
-      "JavaScript/",
-    ],
-  },
+  JS_SIDEBAR,
+  BROWSER_SIDEBAR,
+  NODE_SIDEBAR,
+  WEBPACK_SIDEBAR,
+  VUE_SIDEBAR,
+  REACT_SIDEBAR,
+  TS_SIDEBAR,
+  VISUAL_SIDEBAR,
+  ENGINEER_SIDEBAR,
+  PERFORMANCE_SIDEBAR,
+
   {
     title: "ES6 +",
     sidebarDepth: 1,
@@ -66,152 +60,11 @@ const FED_SIDEBAR = [
     children: [
       "JavaScript/designPatterns/",
       "JavaScript/designPatterns/basic.md",
-      "JavaScript/designPatterns/oop.md"
+      "JavaScript/designPatterns/oop.md",
     ],
   },
   {
     title: "JavaScript函数式编程",
-    sidebarDepth: 2,
-    collapsable: true,
-    children: [],
-  },
-  {
-    title: "浏览器",
-    sidebarDepth: 1,
-    collapsable: true,
-    children: [
-      "Browser/start.md",
-      "Browser/htmlRender.md",
-      "Browser/cssRender.md",
-      "Browser/render.md",
-      "Browser/process.md",
-      "Browser/",
-    ],
-  },
-  {
-    title: "Node.js",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      {
-        title: "基础",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "包管理",
-        sidebarDepth: 1,
-        collapsable: true,
-        children: [
-          "Node/package/",
-          "Node/package/json.md",
-          "Node/package/cnpm.md",
-          "Node/package/yarn.md",
-          "Node/package/pnpm.md",
-          "Node/package/nodeModules.md",
-        ],
-      },
-    ],
-  },
-  {
-    title: "可视化",
-    sidebarDepth: 4,
-    collapsable: true,
-    children: [
-      // {
-      //   title: "基础",
-      //   sidebarDepth: 2,
-      //   collapsable: true,
-      //   children: [],
-      // },
-      {
-        title: "SVG",
-        sidebarDepth: 3,
-        collapsable: true,
-        children: [
-          "Visual/svg/intro.md",
-          "Visual/svg/start.md"
-        ],
-      },
-    ],
-  },
-  {
-    title: "Webpack",
-    sidebarDepth: 2,
-    collapsable: true,
-    children: ["Webpack/"],
-  },
-  {
-    title: "Vue",
-    sidebarDepth: 3,
-    collapsable: true,
-    children: [
-      "Vue/",
-      {
-        title: "框架使用",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "Vue",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "VueRouter",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "Vuex",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "VueLoader",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "VueCLI",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: [],
-      },
-      {
-        title: "VuePress",
-        sidebarDepth: 2,
-        collapsable: true,
-        children: ["Vue/vuePress/start.md"],
-      },
-    ],
-  },
-  {
-    title: "React",
-    sidebarDepth: 2,
-    collapsable: true,
-    children: ["React/"],
-  },
-  {
-    title: "Typescript",
-    sidebarDepth: 2,
-    collapsable: true,
-    children: ["Typescript/"],
-  },
-  {
-    title: "前端工程化",
-    sidebarDepth: 2,
-    collapsable: true,
-    children: ["Project/workflow.md"],
-  },
-  {
-    title: "前端性能优化",
     sidebarDepth: 2,
     collapsable: true,
     children: [],
