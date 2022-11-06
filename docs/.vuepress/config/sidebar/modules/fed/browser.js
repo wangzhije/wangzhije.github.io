@@ -7,7 +7,7 @@ module.exports = {
     "Browser/htmlRender.md",
     "Browser/cssRender.md",
     "Browser/render.md",
-    "Browser/process.md",
+    "Browser/thread.md",
     "Browser/",
   ],
 };

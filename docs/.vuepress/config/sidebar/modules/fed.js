@@ -12,7 +12,7 @@ const CSS_SIDEBAR = require("./fed/css.js");
 const JS_SIDEBAR = require("./fed/js.js");
 const BROWSER_SIDEBAR = require("./fed/browser.js");
 const NODE_SIDEBAR = require("./fed/node.js");
-const VISUAL_SIDEBAR = require("./fed/visual.js");
+const SVG_SIDEBAR = require("./fed/svg.js");
 const WEBPACK_SIDEBAR = require("./fed/webpack.js");
 const VUE_SIDEBAR = require("./fed/vue.js");
 const REACT_SIDEBAR = require("./fed/react.js");
@@ -31,7 +31,7 @@ const FED_SIDEBAR = [
   VUE_SIDEBAR,
   REACT_SIDEBAR,
   TS_SIDEBAR,
-  VISUAL_SIDEBAR,
+  SVG_SIDEBAR,
   ENGINEER_SIDEBAR,
   PERFORMANCE_SIDEBAR,
 

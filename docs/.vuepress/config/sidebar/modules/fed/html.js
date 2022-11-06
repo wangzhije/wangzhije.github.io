@@ -12,6 +12,7 @@ module.exports = {
         "HTML/element/DTD",
         "HTML/element/link",
         "HTML/element/script",
+        "HTML/element/iframe.md",
       ],
     },
     "HTML/metaAll.md",

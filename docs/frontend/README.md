@@ -30,8 +30,8 @@
 
 ## Vue
 
-- [消消乐游戏 在线Demo](http://wangzhijie.top/xxl/)：Vue3 + Vite2 + TypeScript 实战
-<iframe src="http://wangzhijie.top/xxl/" style="width: 100%;height: 800px;"></iframe>
+- [消消乐游戏 在线Demo](http://wangzhije.github.io/xxl/)：Vue3 + Vite2 + TypeScript 实战
+<iframe src="http://wangzhije.github.io/xxl/" style="width: 100%;height: 700px;"></iframe>
 
 ## Node.js
 
