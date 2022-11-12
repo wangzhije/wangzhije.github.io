@@ -1,127 +1,82 @@
-# 坐标系统
+# 1.2 基本使用
 
-## 视窗/视口/容器
+先大概有个了解，后面一一实践
 
-浏览器会默认给定视口的大小 `300px * 150px`
+## 基本要素组成
 
-SVG 的属性 `width` 和 `height` 来控制视窗的大小
+根元素`<svg>` + 基本形状元素 + 编组`<g>`
 
-<div style="display: flex; flex-flow: row nowrap;">
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 代码</div>
-<textarea cols="60" rows="10">
-<svg style="background: aquamarine;">
-</svg> 
-</textarea>
-</div>
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 效果</div>
-<div>
-<svg style="background: aquamarine;">
+## 基本语法
+
+```SVG
+<svg xmlns="http://www.w3.org/2000/svg">
+  <title>svg</title>
+  <desc>svg start</desc>
+  // 绘制图形
+  <rect width="100%" height="100%" fill="red" />
+  <circle cx="150" cy="100" r="80" fill="green" />
+  <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
 </svg>
-</div>
-</div>
-</div>
+```
 
-## 坐标系统/网格系统
+## HTML 嵌入 SVG
 
-单位：像素 px
+- DTD 为 XHTML，且声明类型为 `application/xhtml+xml`
+  - 直接把 SVG 嵌入到 XML 源码中
+- DTD 为 HTML5，且浏览器支持 HTML5；为了符合标准，做一些语法调整
 
-原点：左上角为 (0,0) 坐标点
+  - 通过 `object` 元素引用 SVG 文件
 
-X 轴正方向是向右
+  ```HTML
+    <object data="image.svg" type="image/svg+xml" />
+  ```
 
-y 轴正方向是向下
+  - 使用 `iframe` 元素引用 SVG 文件
 
-<div style="display: flex; flex-flow: row nowrap;">
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 代码</div>
-<textarea cols="60" rows="16">
-<svg width='300' height='150' xmlns='http://wwww.w3.org/2000/svg'>
-  <title>SVG</title>
-  <desc>SVG Start</desc>
+  ```HTML
+    <iframe src="image.svg"></iframe>
+  ```
 
-<line x1="30" y1="30" x2="140" y2="30" style="stroke: black; stroke-width: 1;"></line>
-<path d="M 140 28 L140 32 144 30 z" fill="#000" stroke="black" stroke-width="1" />
-<text x="70" y="20" font-size="14">X 轴</text>
+  - 使用 `img` 元素
 
-<line x1="30" y1="30" x2="30" y2="72" style="stroke: black; stroke-width: 1;"></line>
-<path d="M 28 68 L32 68 30 72 z" fill="#000" stroke="black" stroke-width="1" />
-<text x="4" y="56" font-size="14" style="writing-mode: sideways-rl;">Y 轴</text>
-</svg>
-</textarea>
+  ```HTML
+    <img src="test.svg" />
+  ```
 
-</div>
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 效果</div>
-<svg-start />
-</div>
-</div>
+  ```CSS
+  div.background {
+    background-image: url('test.svg');
+    background-size: 100% 100%;
+  }
+  ```
 
-## 缩放
+  - 使用 `svg` 元素
 
-<div style="display: flex; flex-flow: row nowrap;">
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 代码</div>
-<textarea cols="60" rows="16">
-<svg width='300' height='150' viewBox="0 0 150 75" xmlns='http://wwww.w3.org/2000/svg'>
-  <title>SVG</title>
-  <desc>SVG Start</desc>
+  ```HTML
+    <svg width="400" heihgt="300" id="testSvg">
+      <circle cx="100" cy="100" r="50" fill="red" stroke="black" strock-width="2" id="testCircle"></circle>
+    </svg>
+  ```
 
-<line x1="30" y1="30" x2="140" y2="30" style="stroke: black; stroke-width: 1;"></line>
-<path d="M 140 28 L140 32 144 30 z" fill="#000" stroke="black" stroke-width="1" />
-<text x="70" y="20" font-size="14">X 轴</text>
+  - 通过 `JavaScript` 动态创建并注入到 HTML DOM 中
 
-<line x1="30" y1="30" x2="30" y2="72" style="stroke: black; stroke-width: 1;"></line>
-<path d="M 28 68 L32 68 30 72 z" fill="#000" stroke="black" stroke-width="1" />
-<text x="4" y="56" font-size="14" style="writing-mode: sideways-rl;">Y 轴</text>
-</svg>
-</textarea>
+  ```JS
+    // html2canvas 源码
+    const svg = document.createElementNS(xmlns, 'svg');
+    const foreignObject = document.createElementNS(xmlns, 'foreignObject');
+    svg.setAttributeNS(null, 'width', width.toString());
+    svg.setAttributeNS(null, 'height', height.toString());
 
-</div>
-<div style="font-size: 20px;text-align: center;">
-<div>SVG 效果</div>
-<div>
-  <svg width='300' height='150' viewBox="0 0 150 75" xmlns='http://wwww.w3.org/2000/svg' style="background: aquamarine;">
-    <line x1="30" y1="30" x2="140" y2="30" style="stroke: black; stroke-width: 1;"></line>
-    <path d="M 140 28 L140 32 144 30 z" fill="#000" stroke="black" stroke-width="1" />
-    <text x="70" y="20" font-size="14">X轴</text>
-    <line x1="30" y1="30" x2="30" y2="72" style="stroke: black; stroke-width: 1;"></line>
-    <path d="M 28 68 L32 68 30 72 z" fill="#000" stroke="black" stroke-width="1" />
-    <text x="4" y="56" font-size="14" style="writing-mode: sideways-rl;">Y轴</text>
-  </svg>
-</div>
-</div>
-</div>
+    foreignObject.setAttributeNS(null, 'width', '100%');
+    foreignObject.setAttributeNS(null, 'height', '100%');
+    foreignObject.setAttributeNS(null, 'x', x.toString());
+    foreignObject.setAttributeNS(null, 'y', y.toString());
+    foreignObject.setAttributeNS(null, 'externalResourcesRequired', 'true');
+    svg.appendChild(foreignObject);
 
-- `viewBox="0 0 150 75"` 视窗位置和大小
-  - `min-x`
-  - `min-y`
-  - `width`
-  - `height`
-- 可以使用 `viewBox` 的元素
-  - `<svg>`
-  - `<marker>`
-  - `<pattern>`
-  - `<symbol>`
-  - `<view>`
-- `prespreserveAspectRatio=<align> [meetOrSlice]` 是否强制进行统一缩放(该元素必须有 `viewBox` 属性)
-  - `align`：将 SVG 元素的 viewbox 和 容器的 X 和 Y 的对齐方式
-  - `meetOrSlice`：将 SVG 元素的 viewbox 和 容器拼接和切割
+    foreignObject.appendChild(node);
+  ```
 
-| align 值         |                                                                                                                                             对齐方式 |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------: |
-| xMidYMid(默认值) |              将 SVG 元素的 viewbox 属性的 X 的中点值与视图的 X 的中点值对齐。<br/> 将 SVG 元素的 viewbox 属性的 Y 的中点值与视图的 Y 的中点值对齐。 |
-| xMinYMin         |              将 SVG 元素的 viewbox 属性的 X 的最小值与视图的 X 的最小值对齐。<br/> 将 SVG 元素的 viewbox 属性的 Y 的最小值与视图的 Y 的最小值对齐。 |
-| xMidYMin         |              将 SVG 元素的 viewbox 属性的 X 的中点值与视图的 X 的中点值对齐。<br/> 将 SVG 元素的 viewbox 属性的 Y 的最小值与视图的 Y 的最小值对齐。 |
-| xMaxYMin         | 将 SVG 元素的 viewbox 属性的 X 的最小值 + 元素的宽度与视图的 X 的最大值对齐。<br/> 将 SVG 元素的 viewbox 属性的 Y 的最小值与视图的 Y 的最小值对齐。 |
-| xMinYMid         |              将 SVG 元素的 viewbox 属性的 X 的最小值与视图的 X 的最小值对齐。<br/> 将 SVG 元素的 viewbox 属性的 Y 的中点值与视图的 Y 的中点值对齐。 |
-| xMaxYMid         | 将 SVG 元素的 viewbox 属性的 X 的最小值 + 元素的宽度与视图的 X 的最大值对齐。<br/>将 SVG 元素的 viewbox 属性的 Y 的中点值与视图的 Y 的中点值对齐。 |
-| xMidYMax         | 将 SVG 元素的 viewbox 属性的 X 的中点值与视图的 X 的中点值对齐。 <br/>将 SVG 元素的 viewbox 属性的 Y 的最小值 + 元素的高度与视图的 Y 的最大值对齐。 |
-| xMaxYMax         | 将 SVG 元素的 viewbox 属性的 X 的最小值 + 元素的宽度与视图的 X 的最大值对齐。<br/>将 SVG 元素的 viewbox 属性的 Y 的最小值 + 元素的高度与视图的 Y 的最大值对齐。 |
+## SVG 兼容性
 
-| meetOrSlice 值 |                                                                                                                        说明 |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------: |
-| meet           | 宽高比将会被保留 <br/> 整个 SVG 的 viewbox 在视图范围内是可见的 <br/> 尽可能的放大 SVG 的 viewbox，同时仍然满足其他的条件。 |
-| slice          |       宽高比将会被保留 <br/> 整个视图窗口将覆盖 viewbox <br/> SVG 的 viewbox 属性将会被尽可能的缩小，但是仍然符合其他标准。 |
-
+[Can I Use SVG](https://caniuse.com/svg)

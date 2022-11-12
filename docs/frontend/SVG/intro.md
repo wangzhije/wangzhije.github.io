@@ -1,4 +1,4 @@
-# 介绍
+# 1.1 介绍
 
 > 可缩放矢量图形，是 W3C XML 的分支语言之一，用于标记可缩放的矢量图形
 
@@ -13,13 +13,7 @@ SVG 诞生于 1999 年
 - [MDN SVG](!https://developer.mozilla.org/zh-CN/docs/Web/SVG)
 - [MDN SVG 元素](!https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element)
 - [MDN SVG 属性](!https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute)
-
-## SVG 的应用
-
-- 图表视图(echart)、地图视图(WEB-GIS)
-- 形象(AI)的全网应用
-- UI 产品的设计
-- SVG 动画
+- [MDN SVG DOM](!https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model)
 
 ## SVG 优缺点
 
@@ -56,7 +50,19 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 ```
 
-## SVG 元素分类
+## SVG 的应用
+
+- 图表视图(echart)、地图视图(WEB-GIS)
+- 形象(AI)的全网应用
+- UI 产品的设计
+- SVG 动画
+
+## SVG 的常用类库
+
+- 动画
+- 图表
+
+<!-- ## SVG 元素分类
 
 - 动画元素
   - animate
@@ -141,4 +147,4 @@ Vary: Accept-Encoding
     - style
     - symbol
     - clipPath
-  - 可渲染元素(除非渲染元素)
+  - 可渲染元素(除非渲染元素) -->

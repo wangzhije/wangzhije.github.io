@@ -1,7 +1,7 @@
 # DTD
 
 > - DTD：Document Type Declaration 文档类型声明
-> - <!DOCTYPE html>(H5 标准模式)
+> - `<!DOCTYPE html>`(H5 标准模式)
 
 <div style="display: none;">
 - [DTD](!https://developer.mozilla.org/zh-CN/docs/Glossary/DTD)
@@ -51,3 +51,23 @@
     ```HTML
       <!DOCTYPE html>
     ```
+
+## 浏览器的排版引擎模式
+
+浏览器解析，主要是三个部分
+- 布局（盒模型）
+- 样式解析（CSS）
+- 脚本解析（JS）
+
+### 混杂模式 Quirks mode
+
+- 排版会模拟，IE 的非标准行为
+
+### 近标准模式 Almost standards mode
+
+- 从 Mozilla 1.0.1 和 1.1 Beta 开始，存在的一种新的渲染模式
+- 只有少数的怪异行为被实现
+
+### 标准模式 Standards mode
+
+- HTML 和 CSS 的规范描述行为
