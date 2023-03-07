@@ -1,0 +1,1 @@
+import{_ as a,V as t,W as n,$ as c,Y as e,Z as r,C as s}from"./framework-ad6b4471.js";const _={},i=e("h1",{id:"书本翻页特效",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#书本翻页特效","aria-hidden":"true"},"#"),r(" 书本翻页特效")],-1);function d(l,m){const o=s("animation-book");return t(),n("div",null,[i,c(o)])}const f=a(_,[["render",d],["__file","book.html.vue"]]);export{f as default};

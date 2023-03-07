@@ -1,0 +1,1 @@
+import{_ as t,V as c,W as r,Y as e,Z as s}from"./framework-ad6b4471.js";const a={},o=e("h1",{id:"script",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#script","aria-hidden":"true"},"#"),s(" script")],-1),i=[o];function n(_,d){return c(),r("div",null,i)}const l=t(a,[["render",n],["__file","script.html.vue"]]);export{l as default};

@@ -3,8 +3,10 @@
   heroImage: /logo.png
   heroText: 个人知识库网站
   tagline: 持续更新中...
-  actionText: 前端开发
-  actionLink: /frontend/
+  
+  actionText: 常用网站
+  actionLink: /websitelist/
+
   features:
   - title: 计算机基础
     details: Linux、计算机网络、数据结构和算法、数据库

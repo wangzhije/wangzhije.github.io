@@ -3,6 +3,10 @@
 > - Fast, disk space efficient package manager
 > - 快，节省磁盘空间，的 package 管理器
 
+相关链接
+
+- [pnpm 中文网](!https://www.pnpm.cn/)
+
 ## 高效利用磁盘空间
 
 硬链接(Hard Link)
@@ -70,4 +74,3 @@ monorepo 管理工具 `lerna`
 ### 使用 rust 写一些模块
 
 具体可以看[pnpm discussion](https://github.com/pnpm/pnpm/discussions/3419)讨论的内容，大概就是作者希望给 pnpm 的一些子命令提供一些 rust 的 cli wrapper 来做提升性能使用。
-
