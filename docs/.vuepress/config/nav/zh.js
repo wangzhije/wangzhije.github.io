@@ -1,22 +1,18 @@
 module.exports = {
   NavItems4ZH: [
     {
-      text: "常用网站",
-      link: "/websitelist/",
-    },
-    {
       text: "计算机基础",
-      link: "/basic/",
+      link: '/basic/',
       items: [
         { text: "Linux", link: "/basic/Linux/" },
         { text: "计算机网络", link: "/basic/Internet/" },
         { text: "数据结构与算法", link: "/basic/Algorithm/" },
-        { text: "数据库", link: "/basic/Database/" },
+        { text: '数据库', link: '/basic/Database/' },
       ],
     },
     {
       text: "通用知识",
-      link: "/common/",
+      link: '/common/',
       items: [
         { text: "Git", link: "/common/Git/" },
         // { text: 'Github', link: '/frontend/Github/' },
@@ -26,7 +22,7 @@ module.exports = {
     },
     {
       text: "前端",
-      link: "/frontend/",
+      link: '/frontend/',
       items: [
         { text: "HTML", link: "/frontend/HTML/" },
         { text: "CSS", link: "/frontend/CSS/" },

@@ -1,1 +1,0 @@
-import{_ as t,V as a,W as o,Y as e,Z as c}from"./framework-ad6b4471.js";const r={},s=e("h1",{id:"盒模型",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#盒模型","aria-hidden":"true"},"#"),c(" 盒模型")],-1),n=[s];function _(d,i){return a(),o("div",null,n)}const l=t(r,[["render",_],["__file","box.html.vue"]]);export{l as default};

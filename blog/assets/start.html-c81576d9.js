@@ -1,1 +1,0 @@
-import{_ as t,V as s,W as a,Y as e,Z as o}from"./framework-ad6b4471.js";const r={},c=e("h1",{id:"node-js-入门",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#node-js-入门","aria-hidden":"true"},"#"),o(" Node.js 入门")],-1),n=[c];function d(_,i){return s(),a("div",null,n)}const l=t(r,[["render",d],["__file","start.html.vue"]]);export{l as default};
