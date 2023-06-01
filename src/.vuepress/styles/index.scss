@@ -1,0 +1,23 @@
+// place your custom styles here
+.blogger-info .num-wrapper > div .num {
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+// iconfont
+@font-face {
+  font-family: "iconfont";
+  src: url("./assets/icon/iconfont.woff2") format("woff2"),
+    url("../assets/icon/iconfont.woff") format("woff"),
+    url("./assets/icon/iconfont.ttf") format("truetype");
+}
+
+.icon-eslint:before {
+  content: "\eb8a";
+}
+
+.icon-webpack:before {
+  content: "\ed0b";
+}
