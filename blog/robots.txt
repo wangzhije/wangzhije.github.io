@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://wangzhije.github.io/blog/sitemap.xml
