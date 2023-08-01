@@ -1,13 +1,16 @@
 {
   "name": "wangzhije.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "roadmap developer notes",
+  "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "vuepress build src",
-    "clean-dev": "vuepress dev src --clean-cache",
-    "dev": "vuepress dev src",
-    "update-package": "pnpm dlx vp-update"
+    "start": "pnpm run docs:dev",
+    "build": "pnpm run docs:build",
+    "docs:build": "vuepress build src",
+    "docs:clean-dev": "vuepress dev src --clean-cache",
+    "docs:dev": "vuepress dev src",
+    "docs:update-package": "pnpm dlx vp-update"
   },
   "repository": {
     "type": "git",
@@ -22,16 +25,14 @@
     "docsify"
   ],
   "author": "wangzhijie",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/wangzhije/wangzhije.github.io/issues"
   },
   "homepage": "https://github.com/wangzhije/wangzhije.github.io#readme",
   "devDependencies": {
-    "docsify-cli": "^4.4.4",
-    "@vuepress/client": "2.0.0-beta.62",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.62",
-    "vuepress-theme-hope": "2.0.0-beta.213"
+    "@vuepress/client": "2.0.0-beta.66",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-hope": "2.0.0-beta.234"
   }
 }

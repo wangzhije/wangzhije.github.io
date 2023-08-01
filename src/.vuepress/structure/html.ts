@@ -1,11 +1,10 @@
 export default [
-  { text: "基本介绍", icon: "info", link: "intro" },
-  { text: "历史发展", icon: "time", link: "history" },
-  { text: "文档结构", icon: "blog", link: "structure" },
-  { text: "网站信息架构", icon: "frame", link: "website" },
+  { text: "基本介绍", link: "intro" },
+  { text: "历史发展", link: "history" },
+  { text: "文档结构", link: "structure" },
+  { text: "网站信息架构", link: "website" },
   {
     text: "标签元素",
-    icon: "emmet",
     prefix: "Element/",
     children: [
       { text: "DTC", link: "DTD" },
@@ -18,13 +17,11 @@ export default [
   },
   {
     text: "应用示例",
-    icon: "android",
     prefix: "application/",
     children: [{ text: "网站换肤", link: "style" }],
   },
   {
     text: "其他",
-    icon: "discover",
     children: [{ text: "微格式", link: "microformat" }],
   },
 ];

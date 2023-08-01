@@ -1,9 +1,9 @@
 export default [
-  { text: "基本介绍", icon: "info", link: "intro" },
-  { text: "历史发展", icon: "time", link: "history" },
-  { text: "盒模型", icon: "notes", link: "box" },
-  { text: "BFC", icon: "notes", link: "bfc" },
-  { text: "水平垂直居中", icon: "notes", link: "center" },
+  { text: "基本介绍", link: "intro" },
+  { text: "历史发展", link: "history" },
+  { text: "盒模型", link: "box" },
+  { text: "BFC", link: "bfc" },
+  { text: "水平垂直居中", link: "center" },
   // {
   //   text: "标签元素",
   //   icon: "emmet",
