@@ -26,6 +26,11 @@ jobs:
         with:
           run_install: true
 
+      - name: 安装 pnpm
+        uses: npm install pnpm
+        with:
+          run_install: true
+
 
       - name: 设置 Node.js
         uses: actions/setup-node@v3
