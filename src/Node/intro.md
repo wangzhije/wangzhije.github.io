@@ -62,8 +62,14 @@ JavaScript 宿主环境
 ### 工具类应用
 
 CLI
+
 Babel
+
 Webpack
+
+- webpack-cli
+  - `Commander` extends `EventEmitter`
+
 Vite
 
 ### 桌面端应用
