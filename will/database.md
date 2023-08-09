@@ -56,9 +56,9 @@
 
 ### 语法
 
-- `use RUNOOB` 命令用于选择数据库
-- `set names utf8` 命令用于设置使用的字符集
 - 大小写不敏感
+- `set names utf8` 命令用于设置使用的字符集
+- `use RUNOOB` 命令用于选择数据库
 
 ### 语句
 
@@ -152,6 +152,24 @@ ORDER BY column1, column2, ... ASC|DESC;
 
 - `-u` 即 username，root
 - `-p` 即 password，root1234
+
+其他
+
+- 查看当前数据库 `$mysql> select database();`
+- 创建数据库 `$mysql> `
+- 切换数据库 `$mysql> use databaseName;`
+- 退出数据库 `$mysql> exit;` `$mysql> quit;`
+- 导入 .sql 文件
+  - `$mysql> source /tour.sql`
+  - `mysql -uroot -p root1234 tour < /Users/wangzhijie/Desktop/project/VueNode/server/tour.sql`
+- nodejs 中连接 mysql 报错 `Client does not support authentication protocol requested by server；`
+  - mysql 版本是 8 以后的，对密码的算法在 node 中不支持，所以需要去修改密码为旧版本
+  - cmd 登录 `mysql -u root -p`，输入密码
+  - `$mysql>use mysql;`
+  - `$mysql>select user,host from user where user='root'`
+  - `$mysql>ALTER USER 'root'@'localhost' IDENTIFIED BY '123456' PASSWORD EXPIRE NEVER;`
+  - `$mysql>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';`
+  - 刷新权限 `$mysql>FLUSH PRIVILEGES;`
 
 ## 数据库命名规范
 
