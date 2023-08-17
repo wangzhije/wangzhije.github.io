@@ -110,14 +110,21 @@ public class HelloWorld {
 
 ## 基本数据类型
 
-内置数据类型
+8 种，内置数据类型
 
-- byte
-- short
-- int
-- long
-- boolean
+| 数据类型 | 默认值 |
+| -------- | -----: |
+| byte     |      0 |
+| short    |      0 |
+| int      |      0 |
+| long     |     0L |
+| float    |   0.0f |
+| double   |   0.0d |
+| boolean  |  false |
+| char     |      0 |
 
 ## 引用数据类型
+
+## 类型转换
 
 ## 栈内存 和 堆内存
