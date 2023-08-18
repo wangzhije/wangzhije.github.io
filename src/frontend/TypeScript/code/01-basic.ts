@@ -1,16 +1,3 @@
-# 基础类型
-
-基础类型
-
-- string
-- number
-- boolean
-- symbol
-- null
-- void
-- never
-
-```ts
 // ts 文件可以正常些 js 代码
 let bln1 = true;
 let str1 = "abc";
@@ -63,4 +50,3 @@ function error(msg: string): never {
 function fail(): void {
   return error("failed");
 }
-```

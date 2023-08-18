@@ -2,6 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 import html from "../structure/html";
 import css from "../structure/css";
 import javascript from "../structure/javascript";
+import typescript from "../structure/typescript";
 
 import browser from "../structure/browser";
 import nodejs from "../structure/nodejs";
@@ -27,6 +28,12 @@ export const zhNavbar = navbar([
     icon: "javascript",
     prefix: "/frontend/JavaScript/",
     children: [...javascript],
+  },
+  {
+    text: "TypeScript",
+    icon: "typescript",
+    prefix: "/frontend/TypeScript/",
+    children: [...typescript],
   },
   {
     text: "浏览器",
