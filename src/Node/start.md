@@ -30,3 +30,11 @@
 ## 版本管理
 
 nvm
+
+## Node.js 升级至最新 LTS 版本
+
+```js
+sudo npm cache clean -f
+sudo npm i -g n
+sudo n stable
+```
