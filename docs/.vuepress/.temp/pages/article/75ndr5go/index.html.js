@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/article/75ndr5go/index.html.vue"
+const data = JSON.parse("{\"path\":\"/article/75ndr5go/\",\"title\":\"githubpages\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"githubpages\",\"createTime\":\"2025/08/14 23:23:11\",\"permalink\":\"/article/75ndr5go/\"},\"readingTime\":{\"minutes\":0.94,\"words\":281},\"git\":{},\"filePathRelative\":\"notes/Git/github/githubpages.md\",\"headers\":[],\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10000,\"name\":\"notes\"},{\"id\":\"9f80bc\",\"sort\":10001,\"name\":\"Git\"},{\"id\":\"7d5e5c\",\"sort\":10002,\"name\":\"github\"}]}")
+export { comp, data }

@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/frontend/javascript/tt9y7dhz/index.html.vue"
+const data = JSON.parse("{\"path\":\"/frontend/javascript/tt9y7dhz/\",\"title\":\"从面向过程到面向对象\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"从面向过程到面向对象\",\"createTime\":\"2023/05/25 15:28:27\",\"permalink\":\"/frontend/javascript/tt9y7dhz/\",\"tags\":[\"JavaScript\",\"设计模式\"]},\"readingTime\":{\"minutes\":2.73,\"words\":820},\"git\":{},\"filePathRelative\":\"notes/1.frontend/3.JavaScript/6.设计模式/1.面向对象/1.面向过程.md\",\"headers\":[]}")
+export { comp, data }

@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/network/b5tbbr5b/index.html.vue"
+const data = JSON.parse("{\"path\":\"/network/b5tbbr5b/\",\"title\":\"从URL到网页\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"从URL到网页\",\"createTime\":\"2025/08/18 00:13:12\",\"permalink\":\"/network/b5tbbr5b/\",\"tags\":[\"计算机网络\",\"浏览器\"]},\"readingTime\":{\"minutes\":8.67,\"words\":2600},\"git\":{},\"filePathRelative\":\"notes/6.计算机网络/从URL到网页.md\",\"headers\":[],\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10000,\"name\":\"notes\"},{\"id\":\"963f37\",\"sort\":6,\"name\":\"计算机网络\"}]}")
+export { comp, data }

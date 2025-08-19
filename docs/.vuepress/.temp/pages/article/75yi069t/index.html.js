@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/article/75yi069t/index.html.vue"
+const data = JSON.parse("{\"path\":\"/article/75yi069t/\",\"title\":\"githooks\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"githooks\",\"createTime\":\"2025/08/14 23:23:11\",\"permalink\":\"/article/75yi069t/\"},\"readingTime\":{\"minutes\":0.2,\"words\":60},\"git\":{},\"filePathRelative\":\"notes/Git/git/githooks.md\",\"headers\":[],\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10000,\"name\":\"notes\"},{\"id\":\"9f80bc\",\"sort\":10001,\"name\":\"Git\"},{\"id\":\"914119\",\"sort\":10003,\"name\":\"git\"}]}")
+export { comp, data }

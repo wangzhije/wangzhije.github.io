@@ -1,0 +1,24 @@
+<template><div><p>国内使用 npm 存在的问题</p>
+<ul>
+<li>安装 npm 后，每次我们安装包时，是去 npm 仓库获取包</li>
+<li>因为 npm 的远程服务器在国外，所以有时候难免出现访问过慢，甚至无法访问的情况</li>
+</ul>
+<p>npm 仓库地址</p>
+<ul>
+<li>默认地址为：http://registry.npmjs.org</li>
+<li>查看当前 npm 仓库地址命令：<code v-pre>npm config get registry</code></li>
+</ul>
+<p>为了解决这个问题，我们有以下几个解决办法</p>
+<h2 id="直接安装淘宝提供的-cnpm" tabindex="-1"><a class="header-anchor" href="#直接安装淘宝提供的-cnpm"><span>直接安装淘宝提供的 cnpm</span></a></h2>
+<ul>
+<li>安装 cnpm <code v-pre>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
+<li>以后使用 <code v-pre>cnpm install webpack -D</code></li>
+</ul>
+<h2 id="替换-npm-仓库地址为淘宝镜像地址" tabindex="-1"><a class="header-anchor" href="#替换-npm-仓库地址为淘宝镜像地址"><span>替换 npm 仓库地址为淘宝镜像地址</span></a></h2>
+<ul>
+<li><code v-pre>npm config set registry https://registry.npm.taobao.org</code></li>
+<li>以后使用 <code v-pre>npm install webpack -D</code></li>
+</ul>
+</div></template>
+
+

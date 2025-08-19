@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/frontend/javascript/1vkp7jz1/index.html.vue"
+const data = JSON.parse("{\"path\":\"/frontend/javascript/1vkp7jz1/\",\"title\":\"数组\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"数组\",\"createTime\":\"2025/08/18 17:27:46\",\"permalink\":\"/frontend/javascript/1vkp7jz1/\",\"tags\":[\"JavaScript\",\"算法\"]},\"readingTime\":{\"minutes\":2.06,\"words\":619},\"git\":{},\"filePathRelative\":\"notes/1.frontend/3.JavaScript/5.数据结构与算法/2.array.md\",\"headers\":[]}")
+export { comp, data }

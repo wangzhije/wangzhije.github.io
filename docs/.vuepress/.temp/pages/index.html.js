@@ -1,0 +1,3 @@
+import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/index.html.vue"
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"王志杰\",\"lang\":\"zh-CN\",\"frontmatter\":{\"pageLayout\":\"home\",\"pageClass\":\"home-page\",\"title\":\"王志杰\",\"navbar\":false,\"config\":[{\"type\":\"Landing\",\"name\":\"王志杰\",\"tagline\":\"路漫漫其修远兮，吾将上下而求索···'\",\"avatar\":\"./images/avatar.jpeg\",\"nav\":[{\"text\":\"博客\",\"link\":\"/blog/\",\"icon\":\"material-symbols:menu-book\"},{\"text\":\"站点导航\",\"link\":\"/sites-map/\",\"icon\":\"mdi:roadmap\"}]}]},\"readingTime\":{\"minutes\":0.88,\"words\":264},\"git\":{},\"filePathRelative\":\"README.md\",\"headers\":[],\"categoryList\":[]}")
+export { comp, data }

@@ -1,0 +1,96 @@
+<template><div><blockquote>
+<ul>
+<li>DTD：Document Type Declaration 文档类型声明</li>
+<li><code v-pre>&lt;!DOCTYPE html&gt;</code>(H5 标准模式)</li>
+</ul>
+</blockquote>
+<div style="display: none;">
+- [DTD](!https://developer.mozilla.org/zh-CN/docs/Glossary/DTD)
+</div>
+<p>历史发展</p>
+<p>第一次浏览器大战，两个主要阵营</p>
+<ul>
+<li>网景（Netscape）的浏览器（Navigator）</li>
+<li>微软（Microsoft）的浏览器（Internet Explorer，IE）</li>
+</ul>
+<p>标准化：W3C 创立网络标准</p>
+<ul>
+<li>浏览器采用了两种模式；为了不破坏当时的既有网站，并且，区分老旧网站、符合新规范的网站
+<ul>
+<li>怪异模式</li>
+<li>标准模式</li>
+</ul>
+</li>
+</ul>
+<p>目前浏览器的排版引擎，使用三种模式</p>
+<ul>
+<li><strong>怪异模式</strong> Quirks mode，<strong>兼容模式</strong>
+<ul>
+<li>排版会模拟，IE 的非标准行为</li>
+</ul>
+</li>
+<li><strong>接近标准模式</strong> Almost standards mode
+<ul>
+<li>从 Mozilla 1.0.1 和 1.1 Beta 开始，存在的一种新的渲染模式</li>
+<li>只有少数的怪异行为被实现</li>
+</ul>
+</li>
+<li><strong>标准模式</strong> Standards mode
+<ul>
+<li>HTML 和 CSS 的规范描述行为</li>
+</ul>
+</li>
+</ul>
+<h2 id="doctype" tabindex="-1"><a class="header-anchor" href="#doctype"><span>Doctype</span></a></h2>
+<p>浏览器根据 Doctype 决定使用哪种排版模式</p>
+<ul>
+<li>在 HTML 中，doctype 声明，是必要的</li>
+<li>把 DOCTYPE 正确地置于 HTML 文件的顶端
+<ul>
+<li>如果有任何其他字符位于 DOCTYPE 之前，比如注释或 XML 声明</li>
+<li>会导致 IE 9 或更早期的浏览器触发怪异模式</li>
+</ul>
+</li>
+<li>版本介绍
+<ul>
+<li>HTML4
+<ul>
+<li>文档类型声明类似于链接</li>
+<li>规定了 HTML 页面必须遵从的良好规则 - 能自动检测错误和其他有用的东西
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+`</li>
+</ul>
+</li>
+<li>HTML5，标准推荐
+<ul>
+<li>唯一的作用是启用标准模式，用于保证文档正常读取</li>
+</ul>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-html"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">  &#x3C;!</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">DOCTYPE</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> html</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+</ul>
+</li>
+</ul>
+<h2 id="浏览器的排版引擎模式" tabindex="-1"><a class="header-anchor" href="#浏览器的排版引擎模式"><span>浏览器的排版引擎模式</span></a></h2>
+<p>浏览器解析，主要是三个部分</p>
+<ul>
+<li>布局（盒模型）</li>
+<li>样式解析（CSS）</li>
+<li>脚本解析（JS）</li>
+</ul>
+<h3 id="混杂模式-quirks-mode" tabindex="-1"><a class="header-anchor" href="#混杂模式-quirks-mode"><span>混杂模式 Quirks mode</span></a></h3>
+<ul>
+<li>排版会模拟，IE 的非标准行为</li>
+</ul>
+<h3 id="近标准模式-almost-standards-mode" tabindex="-1"><a class="header-anchor" href="#近标准模式-almost-standards-mode"><span>近标准模式 Almost standards mode</span></a></h3>
+<ul>
+<li>从 Mozilla 1.0.1 和 1.1 Beta 开始，存在的一种新的渲染模式</li>
+<li>只有少数的怪异行为被实现</li>
+</ul>
+<h3 id="标准模式-standards-mode" tabindex="-1"><a class="header-anchor" href="#标准模式-standards-mode"><span>标准模式 Standards mode</span></a></h3>
+<ul>
+<li>HTML 和 CSS 的规范描述行为</li>
+</ul>
+</div></template>
+
+

@@ -1,38 +1,31 @@
 {
-  "name": "wangzhije.github.io",
-  "version": "2.0.0",
-  "description": "roadmap developer notes",
-  "license": "MIT",
+  "name": "my-vuepress-site",
   "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "wangzhije <1662285571@qq.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^20.6.0 || >=22.0.0"
+  },
   "scripts": {
-    "start": "pnpm run docs:dev",
-    "build": "pnpm run docs:build",
-    "docs:build": "vuepress build src",
-    "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "start": "vuepress dev docs",
+    "devclean": "vuepress dev docs --clean-cache --clean-temp",
+    "build": "vuepress build docs --clean-cache --clean-temp",
+    "preview": "http-server docs/.vuepress/dist",
+    "update": "npx vp-update"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wangzhije/wangzhije.github.io.git"
-  },
-  "keywords": [
-    "frontend",
-    "developer",
-    "roadmap",
-    "notes",
-    "vuepress",
-    "docsify"
-  ],
-  "author": "wangzhijie",
-  "bugs": {
-    "url": "https://github.com/wangzhije/wangzhije.github.io/issues"
-  },
-  "homepage": "https://github.com/wangzhije/wangzhije.github.io#readme",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.66",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.66",
-    "vuepress-theme-hope": "2.0.0-beta.234"
+    "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "@vuepress/plugin-llms": "^2.0.0-rc.112",
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.2",
+    "vue": "^3.5.18",
+    "vuepress": "2.0.0-rc.24",
+    "vuepress-theme-plume": "1.0.0-rc.160"
+  },
+  "dependencies": {
+    "gitmojis": "^3.15.0",
+    "swiper": "^11.2.10"
   }
 }

@@ -1,0 +1,83 @@
+<template><div><h2 id="domcontentloaded-和-load-事件" tabindex="-1"><a class="header-anchor" href="#domcontentloaded-和-load-事件"><span>DOMContentLoaded 和 load 事件</span></a></h2>
+<blockquote>
+<p>MDN 定义<br>
+DOMContentLoaded</p>
+<ul>
+<li>当初始的 HTML 文档 被 完全加载 和 解析完成 之后，DOMContentLoaded 事件被触发。</li>
+<li>而无需等待 CSS、图像和子框架的完成加载</li>
+</ul>
+<p>load</p>
+<ul>
+<li>当所有资源加载完成之后触发</li>
+<li>包括所有相关资源: 样式表 CSS、图像 img、脚本 js</li>
+</ul>
+</blockquote>
+<h2 id="首次渲染和白屏" tabindex="-1"><a class="header-anchor" href="#首次渲染和白屏"><span>首次渲染和白屏</span></a></h2>
+<p>在 body 中第一个 script 资源下载完成之前，浏览器会进行<strong>首次渲染</strong>。</p>
+<p>将该 script 标签前面的 DOM 树和 CSSOM 合并成一棵 Render 树，渲染到页面中。</p>
+<p>这是页面从<strong>白屏</strong>到首次渲染的时间节点，即 DOMContentLoaded 触发之前经历的 HTML 文档加载和解析的时间。</p>
+<h2 id="遇到-script-标签" tabindex="-1"><a class="header-anchor" href="#遇到-script-标签"><span>遇到 <code v-pre>&lt;script&gt;</code> 标签</span></a></h2>
+<ul>
+<li>当遇到（同步）脚本（标签中不含 <code v-pre>async</code> 或 <code v-pre>defer</code>）则停止 HTML 解析，先去加载脚本，然后执行，执行结束后继续解析 HTML 文档</li>
+<li>当遇到 <code v-pre>defer</code> 脚本，则在后台加载脚本。文档解析过程不中断，而等文档解析结束之后，defer 脚本执行</li>
+<li>当遇到 <code v-pre>async</code> 脚本，则在后台加载脚本。文档解析过程不中断，脚本加载完成后，文档停止解析，脚本执行，执行结束后文档继续解析</li>
+</ul>
+<h2 id="script-和-domcontentloaded" tabindex="-1"><a class="header-anchor" href="#script-和-domcontentloaded"><span><code v-pre>&lt;script&gt;</code> 和 DOMContentLoaded</span></a></h2>
+<h3 id="同步脚本" tabindex="-1"><a class="header-anchor" href="#同步脚本"><span>同步脚本</span></a></h3>
+<p>标签中不含 <code v-pre>async</code> 或 <code v-pre>defer</code></p>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-html"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">  &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> src</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">***.js</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> charset</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">utf-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">>&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<li>HTML 文档被解析时如果遇见（同步）脚本，则停止解析。</li>
+<li>先去加载脚本，然后执行，执行结束后继续解析 HTML 文档。</li>
+<li>HTML 文档解析完毕后触发 DOMContentLoaded。</li>
+</ul>
+<p><img src="@source/notes/1.frontend/4.浏览器/imgs/js-sync.png" alt="script-sync"></p>
+<h3 id="defer-脚本" tabindex="-1"><a class="header-anchor" href="#defer-脚本"><span><code v-pre>defer</code> 脚本</span></a></h3>
+<p>当 HTML 文档被解析时如果遇见 <code v-pre>defer</code> 脚本</p>
+<ul>
+<li>则在后台加载脚本，文档解析过程不中断</li>
+<li>等文档解析结束之后，defer 脚本执行。</li>
+</ul>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-html"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">  &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> src</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">***.js</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> charset</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">utf-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> defer</span><span style="--shiki-light:#999999;--shiki-dark:#666666">>&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol>
+<li>HTML 还没解析完成时，defer 脚本已经加载完毕</li>
+</ol>
+<ul>
+<li>defer 脚本将等待 HTML 解析完成后再执行</li>
+<li>defer 脚本执行完毕后触发 DOMContentLoaded 事件</li>
+</ul>
+<p><img src="@source/notes/1.frontend/4.浏览器/imgs/js-defer1.png" alt="script-defer1"></p>
+<ol start="2">
+<li>HTML 解析完成时，defer 脚本还没加载完毕</li>
+</ol>
+<ul>
+<li>defer 脚本继续加载，加载完成后直接执行</li>
+<li>defer 脚本执行完毕后触发 DOMContentLoaded 事件</li>
+</ul>
+<p><img src="@source/notes/1.frontend/4.浏览器/imgs/js-defer2.png" alt="script-defer2"></p>
+<h3 id="async-脚本" tabindex="-1"><a class="header-anchor" href="#async-脚本"><span><code v-pre>async</code> 脚本</span></a></h3>
+<p>当 HTML 文档被解析时如果遇见 <code v-pre>async</code> 脚本</p>
+<ul>
+<li>则在后台加载脚本，文档解析过程不中断。</li>
+<li>脚本加载完成后，文档停止解析，脚本执行，执行结束后文档继续解析。</li>
+</ul>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-html"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">  &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> src</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">***.js</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> charset</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">utf-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> async</span><span style="--shiki-light:#999999;--shiki-dark:#666666">>&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">script</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol>
+<li>HTML 还没有被解析完的时候，async 脚本已经加载完成</li>
+</ol>
+<ul>
+<li>HTML 停止解析，去执行脚本</li>
+<li>脚本执行完毕后触发 DOMContentLoaded 事件</li>
+</ul>
+<p><img src="@source/notes/1.frontend/4.浏览器/imgs/js-async1.png" alt="script-async1"></p>
+<ol start="2">
+<li>HTML 解析完了之后，async 脚本才加载完成</li>
+</ol>
+<ul>
+<li>执行脚本</li>
+<li>在 HTML 解析完毕、async 脚本还没加载完的时候就触发 DOMContentLoaded 事件</li>
+</ul>
+<p><img src="@source/notes/1.frontend/4.浏览器/imgs/js-async2.png" alt="script-async2"></p>
+</div></template>
+
+

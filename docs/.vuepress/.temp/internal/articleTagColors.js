@@ -1,0 +1,2 @@
+import './articleTagColors.css'
+export const articleTagColors = {"计算机网络":"e7c1","浏览器":"fqok","webpack":"53mu","JavaScript":"d3dd","模块化":"scnj","Node.js":"ui8z","cnpm":"8zqh","Koa2":"ui8z","HTML":"ui8z","CSS":"ui8z","实践":"d3dd","动画":"7che","ES6+":"l656","算法":"zsi8","设计模式":"e7c1"}
