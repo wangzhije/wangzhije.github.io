@@ -6,20 +6,28 @@
 :root {
   --landing-c-text: rgba(255, 255, 255, 0.95);
   --landing-c-text-hover: rgba(235, 245, 245, 1);
-  --landing-card-bg: rgba(0,0, 0, 0.3);
+  --landing-card-bg: rgba(0, 0, 0, 0.3);
   --landing-card-bg-hover: rgba(0, 0, 0, 0.4);
   --landing-card-backdrop: blur(5px);
-  --landing-card-conic: conic-gradient(transparent, rgba(255, 255, 255, 0.2), transparent 30%);
+  --landing-card-conic: conic-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent 30%
+  );
 }
 
 [data-theme="dark"] {
   --landing-card-bg: rgba(0, 0, 0, 0.4);
   --landing-card-bg-hover: rgba(0, 0, 0, 0.5);
   --landing-card-backdrop: blur(5px);
-  --landing-card-conic: conic-gradient(transparent, rgba(255, 255, 255, 0.2), transparent 30%)
+  --landing-card-conic: conic-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent 30%
+  );
 }
 
-.layout-landing .vp-footer {
+.vp-layout .vp-footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -30,7 +38,7 @@
   padding: 8px 0;
 }
 
-.layout-landing .vp-footer .container {
+.vp-layout .vp-footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,17 +46,17 @@
   gap: 0 24px;
 }
 
-.layout-landing .vp-footer .container .message {
-  display: none;
+vp-layout .vp-footer .container .message {
+  display: block;
 }
 
 @media (min-width: 768px) {
-  .layout-landing .vp-footer .container .message {
+  .vp-layout .vp-footer .container .message {
     display: block;
     position: relative;
   }
-  .layout-landing .vp-footer .container .message::before {
-    content: '';
+  .vp-layout .vp-footer .container .message::before {
+    content: "";
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -62,12 +70,12 @@
   }
 }
 
-.layout-landing .vp-footer p,
-.layout-landing .vp-footer a {
+.vp-layout .vp-footer p,
+.vp-layout .vp-footer a {
   color: var(--landing-c-text);
 }
 
-.layout-landing .vp-footer a:hover {
+.vp-layout .vp-footer a:hover {
   color: var(--landing-c-text-hover);
 }
 
@@ -85,4 +93,13 @@
 .landing-card:hover {
   background-color: var(--landing-card-bg-hover);
   transform: scale(1.01);
+}
+
+.vp-layout .vp-footer .container {
+  .message {
+    display: none;
+  }
+  .copyright {
+    color: azure;
+  }
 }

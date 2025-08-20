@@ -104,8 +104,8 @@ export default plumeTheme({
   // },
 
   /* 本地搜索, 默认启用 */
-  // search: { provider: "local" },
-  search: false,
+  search: { provider: "local" },
+  // search: false,
 
   /**
    * Algolia DocSearch
@@ -183,7 +183,7 @@ export default plumeTheme({
    * 水印
    * @see https://theme-plume.vuejs.press/guide/features/watermark/
    */
-  // watermark: true,
+  watermark: true,
 
   /**
    * 评论 comments
