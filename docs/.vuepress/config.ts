@@ -20,7 +20,7 @@ import theme from "./theme-options";
 
 export default defineUserConfig({
   // vuepress config
-  // base: "/blog/",
+  base: "/blog/",
   dest: "./blog",
   lang: "zh-CN",
   theme,

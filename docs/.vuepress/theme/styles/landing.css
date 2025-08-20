@@ -27,7 +27,7 @@
   );
 }
 
-.vp-layout .vp-footer {
+.layout-landing .vp-footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -38,7 +38,7 @@
   padding: 8px 0;
 }
 
-.vp-layout .vp-footer .container {
+.layout-landing .vp-footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,16 +46,16 @@
   gap: 0 24px;
 }
 
-vp-layout .vp-footer .container .message {
+.layout-landing .vp-footer .container .message {
   display: block;
 }
 
 @media (min-width: 768px) {
-  .vp-layout .vp-footer .container .message {
+  .layout-landing .vp-footer .container .message {
     display: block;
     position: relative;
   }
-  .vp-layout .vp-footer .container .message::before {
+  .layout-landing .vp-footer .container .message::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -70,12 +70,12 @@ vp-layout .vp-footer .container .message {
   }
 }
 
-.vp-layout .vp-footer p,
-.vp-layout .vp-footer a {
+.layout-landing .vp-footer p,
+.layout-landing .vp-footer a {
   color: var(--landing-c-text);
 }
 
-.vp-layout .vp-footer a:hover {
+.layout-landing .vp-footer a:hover {
   color: var(--landing-c-text-hover);
 }
 
@@ -95,11 +95,10 @@ vp-layout .vp-footer .container .message {
   transform: scale(1.01);
 }
 
-.vp-layout .vp-footer .container {
-  .message {
-    display: none;
-  }
-  .copyright {
-    color: azure;
-  }
+.vp-layout .vp-footer .container .message {
+  display: none;
+}
+
+.vp-layout .vp-footer {
+  padding: 8px 0;
 }

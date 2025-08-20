@@ -1,2 +1,2 @@
 import './articleTagColors.css'
-export const articleTagColors = {"计算机网络":"pkck","浏览器":"2hwx","webpack":"utq7","Node.js":"b1qo","Koa2":"b1qo","cnpm":"a934","JavaScript":"ue4n","模块化":"rijh","HTML":"b1qo","ES6+":"jtpt","算法":"yd3s","设计模式":"pkck","CSS":"b1qo","实践":"ue4n","动画":"gv4p"}
+export const articleTagColors = {"计算机网络":"yoga","浏览器":"qcpe","webpack":"6in9","JavaScript":"8apy","模块化":"d2ft","Node.js":"9cpm","Koa2":"9cpm","cnpm":"bi4e","HTML":"9cpm","CSS":"9cpm","动画":"uk04","实践":"8apy","算法":"9dj6","ES6+":"37l2","设计模式":"yoga"}
