@@ -21,7 +21,29 @@
  */
 import { defineNoteConfig, defineNotesConfig } from "vuepress-theme-plume";
 
-const frontendNotes = defineNoteConfig({
+const os = defineNoteConfig({
+  dir: "5.操作系统",
+  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
+  // 如果 前缀不一致，则无法生成侧边栏。
+  // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
+  link: "/os/",
+  // 手动配置侧边栏结构
+  // sidebar: ["", "foo", "bar"],
+  // 根据文件结构自动生成侧边栏
+  sidebar: "auto",
+});
+const network = defineNoteConfig({
+  dir: "6.计算机系统",
+  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
+  // 如果 前缀不一致，则无法生成侧边栏。
+  // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
+  link: "/network/",
+  // 手动配置侧边栏结构
+  // sidebar: ["", "foo", "bar"],
+  // 根据文件结构自动生成侧边栏
+  sidebar: "auto",
+});
+const frontend = defineNoteConfig({
   dir: "1.frontend",
   // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
   // 如果 前缀不一致，则无法生成侧边栏。
@@ -43,6 +65,17 @@ const nodejs = defineNoteConfig({
   // 根据文件结构自动生成侧边栏
   sidebar: "auto",
 });
+const ai = defineNoteConfig({
+  dir: "9.AI",
+  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
+  // 如果 前缀不一致，则无法生成侧边栏。
+  // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
+  link: "/ai/",
+  // 手动配置侧边栏结构
+  // sidebar: ["", "foo", "bar"],
+  // 根据文件结构自动生成侧边栏
+  sidebar: "auto",
+});
 
 /**
  * 导出所有的 note
@@ -52,6 +85,6 @@ const nodejs = defineNoteConfig({
 export default defineNotesConfig({
   dir: "notes",
   link: "/",
-  notes: [frontendNotes, nodejs],
+  notes: [os, network, frontend, nodejs, ai],
   // notes: [HTML, CSS, JavaScript],
 });

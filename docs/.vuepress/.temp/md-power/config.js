@@ -1,6 +1,7 @@
 import { defineClientConfig } from 'vuepress/client'
 import Tabs from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/Tabs.vue'
 import CodeTabs from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/CodeTabs.vue'
+import CodePen from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/CodePen.vue'
 import Plot from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/Plot.vue'
 import FileTreeNode from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/FileTreeNode.vue'
 import VPDemoBasic from '/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/node_modules/vuepress-plugin-md-power/lib/client/components/VPDemoBasic.vue'
@@ -12,6 +13,7 @@ export default defineClientConfig({
   enhance({ router, app }) {
     app.component('Tabs', Tabs)
     app.component('CodeTabs', CodeTabs)
+    app.component('CodePenViewer', CodePen)
     app.component('Plot', Plot)
     app.component('FileTreeNode', FileTreeNode)
     app.component('VPDemoBasic', VPDemoBasic)

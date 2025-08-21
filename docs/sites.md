@@ -5,26 +5,9 @@ permalink: /sites-map/
 article: false
 ---
 
-## Runtime
-
-<CardGrid>
-  <LinkCard title="Node" icon="logos:nodejs-icon" href="https://nodejs.org/" />
-  <LinkCard title="Deno" icon="logos:deno" href="https://deno.land/" />
-  <LinkCard title="Bun" icon="logos:bun" href="https://bun.sh/" />
-</CardGrid>
-
-## Registry
-
-<CardGrid>
-  <LinkCard title="npm" icon="logos:npm" href="https://www.npmjs.com/" />
-  <LinkCard title="yarn" icon="logos:yarn" href="https://yarnpkg.com/" />
-  <LinkCard title="pnpm" icon="logos:pnpm" href="https://pnpm.io/" />
-  <LinkCard title="jsr" icon="https://jsr.io/logo-square.svg" href="https://jsr.io/" />
-</CardGrid>
-
 ## 库/框架
 
-<CardGrid>
+<!-- <CardGrid>
   <LinkCard title="React" icon="logos:react" href="https://zh-hans.react.dev/" />
   <LinkCard title="Vue" icon="logos:vue" href="https://cn.vuejs.org/" />
   <LinkCard title="Angular" icon="logos:angular-icon" href="https://angular.dev/" />
@@ -72,30 +55,7 @@ article: false
   <LinkCard title="Midway" icon="https://midwayjs.org/img/logo.svg" href="https://midwayjs.org/" />
   <LinkCard title="Thinkjs" icon="https://thinkjs.org/static/img/new/logo.png" href="https://thinkjs.org/" />
   <LinkCard title="Adonis" icon="https://adonisjs.com/icons/favicon-32x32.png" href="https://adonisjs.com/" />
-</CardGrid>
-
-### 微前端
-
-<CardGrid>
-  <LinkCard title="micro-frontends" href="https://swearer23.github.io/micro-frontends/" />
-  <LinkCard title="single-spa" icon="https://single-spa.js.org/img/single-spa-mark-magenta.svg" href="https://single-spa.js.org/" />
-  <LinkCard
-    title="qiankun"
-    icon="https://gw.alipayobjects.com/mdn/rms_655822/afts/img/A*4sIUQpcos_gAAAAAAAAAAAAAARQnAQ"
-    href="https://qiankun.umijs.org/"
-  />
-  <LinkCard
-    title="Garfish"
-    icon="https://lf3-static.bytednsdoc.com/obj/eden-cn/dhozeh7vhpebvog/open-garfish/icons/icon.png"
-    href="https://www.garfishjs.org/"
-  />
-  <LinkCard title="icestark" icon="https://micro-frontends.ice.work/img/logo.png" href="https://micro-frontends.ice.work/" />
-  <linkCard title="无界" icon="https://wujie-micro.github.io/doc/wujie.svg" href="https://wujie-micro.github.io/doc/" />
-</CardGrid>
-
----
-
- <LinkCard title="awesome micro frontends" icon="logos:awesome" href="https://github.com/rajasegar/awesome-micro-frontends" />
+</CardGrid> -->
 
 ### CSS
 
@@ -178,6 +138,60 @@ article: false
   <LinkCard title="Taro" href="https://taro.zone/" />
 </CardGrid>
 
+### 微前端
+
+<CardGrid>
+  <LinkCard title="micro-frontends" href="https://swearer23.github.io/micro-frontends/" />
+  <LinkCard title="single-spa" icon="https://single-spa.js.org/img/single-spa-mark-magenta.svg" href="https://single-spa.js.org/" />
+  <LinkCard
+    title="qiankun"
+    icon="https://gw.alipayobjects.com/mdn/rms_655822/afts/img/A*4sIUQpcos_gAAAAAAAAAAAAAARQnAQ"
+    href="https://qiankun.umijs.org/"
+  />
+  <LinkCard
+    title="Garfish"
+    icon="https://lf3-static.bytednsdoc.com/obj/eden-cn/dhozeh7vhpebvog/open-garfish/icons/icon.png"
+    href="https://www.garfishjs.org/"
+  />
+  <LinkCard title="icestark" icon="https://micro-frontends.ice.work/img/logo.png" href="https://micro-frontends.ice.work/" />
+  <linkCard title="无界" icon="https://wujie-micro.github.io/doc/wujie.svg" href="https://wujie-micro.github.io/doc/" />
+</CardGrid>
+
+---
+
+ <LinkCard title="awesome micro frontends" icon="logos:awesome" href="https://github.com/rajasegar/awesome-micro-frontends" />
+
+## 桌面应用开发
+
+<CardGrid>
+  <LinkCard
+    title="Electron"
+    icon="logos:electron"
+    href="https://electronjs.org/"
+    description="内置 node + chromium，打包后比较重"
+  />
+  <LinkCard
+    title="Tauri"
+    icon="logos:tauri"
+    href="https://tauri.app/"
+    description="rust + 系统webview 2, 打包后很轻"
+  />
+  <LinkCard
+    title="neutralino"
+    icon="https://neutralino.js.org/img/logo.png"
+    href="https://neutralino.js.org/"
+    description="专注于轻量级 桌面应用"
+  />
+</CardGrid>
+
+## 跨平台开发
+
+<CardGrid>
+  <LinkCard title="React Native" icon="logos:react" href="https://reactnative.dev/" />
+  <LinkCard title="Flutter" icon="logos:flutter" href="https://flutter.dev/" />
+  <LinkCard title="NativeScript" icon="logos:nativescript" href="https://nativescript.org/"/>
+</CardGrid>
+
 ## 图标
 
 <CardGrid>
@@ -210,37 +224,6 @@ article: false
   />
   <LinkCard title="Undraw" icon="https://undraw.co/favicon.ico" href="https://undraw.co/illustrations"  />
   <LinkCard title="搜图导航" icon="https://www.91sotu.com/favicon.ico"  href="https://www.91sotu.com/" />
-</CardGrid>
-
-## 桌面应用开发
-
-<CardGrid>
-  <LinkCard
-    title="Electron"
-    icon="logos:electron"
-    href="https://electronjs.org/"
-    description="内置 node + chromium，打包后比较重"
-  />
-  <LinkCard
-    title="Tauri"
-    icon="logos:tauri"
-    href="https://tauri.app/"
-    description="rust + 系统webview 2, 打包后很轻"
-  />
-  <LinkCard
-    title="neutralino"
-    icon="https://neutralino.js.org/img/logo.png"
-    href="https://neutralino.js.org/"
-    description="专注于轻量级 桌面应用"
-  />
-</CardGrid>
-
-## 跨平台开发
-
-<CardGrid>
-  <LinkCard title="React Native" icon="logos:react" href="https://reactnative.dev/" />
-  <LinkCard title="Flutter" icon="logos:flutter" href="https://flutter.dev/" />
-  <LinkCard title="NativeScript" icon="logos:nativescript" href="https://nativescript.org/"/>
 </CardGrid>
 
 ## 网站建设
@@ -338,6 +321,23 @@ article: false
   href="https://learngitbranching.js.org/?locale=zh_CN"
   description="学习 git 分支"
 />
+
+## Runtime
+
+<CardGrid>
+  <LinkCard title="Node" icon="logos:nodejs-icon" href="https://nodejs.org/" />
+  <LinkCard title="Deno" icon="logos:deno" href="https://deno.land/" />
+  <LinkCard title="Bun" icon="logos:bun" href="https://bun.sh/" />
+</CardGrid>
+
+## Registry
+
+<CardGrid>
+  <LinkCard title="npm" icon="logos:npm" href="https://www.npmjs.com/" />
+  <LinkCard title="yarn" icon="logos:yarn" href="https://yarnpkg.com/" />
+  <LinkCard title="pnpm" icon="logos:pnpm" href="https://pnpm.io/" />
+  <LinkCard title="jsr" icon="https://jsr.io/logo-square.svg" href="https://jsr.io/" />
+</CardGrid>
 
 ## 工具
 

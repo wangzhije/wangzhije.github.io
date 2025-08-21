@@ -15,12 +15,30 @@ const navbar = [
   //   icon: "material-symbols:menu-book",
   // },
   {
+    text: "操作系统",
+    icon: "ix:operating-system",
+    items: [
+      {
+        text: "Linux",
+        link: "/os/linux/start/",
+        activeMatch: "^/os/linux/",
+        icon: "mingcute:linux-fill",
+      },
+    ],
+  },
+  {
     text: "计算机网络",
     icon: "picon:network",
     items: [
       {
         text: "从URL到网页",
         link: "/network/b5tbbr5b/",
+        activeMatch: "^/network/",
+        icon: "mdi:network-pos",
+      },
+      {
+        text: "Socket",
+        link: "/network/3gj9ggzn/",
         activeMatch: "^/network/",
         icon: "mdi:network-pos",
       },
@@ -98,36 +116,18 @@ const navbar = [
       // },
     ],
   },
-  // {
-  //   text: "更多",
-  //   icon: "mingcute:more-3-fill",
-  //   items: [
-  //     {
-  //       text: "书籍推荐",
-  //       link: "/ebooks/",
-  //       icon: "material-symbols:recommend",
-  //       activeMatch: "^/ebooks/",
-  //     },
-  //     {
-  //       text: "站点导航",
-  //       link: "/sites-collect/",
-  //       icon: "mdi:roadmap",
-  //       activeMatch: "^/sites-collect",
-  //     },
-  //     {
-  //       text: "AI 模型导航",
-  //       link: "/ai/",
-  //       icon: "eos-icons:ai",
-  //       activeMatch: "^/ai/",
-  //     },
-  //     {
-  //       text: "Command-Line Interface",
-  //       link: "/cli/",
-  //       icon: "grommet-icons:cli",
-  //       activeMatch: "^/cli",
-  //     },
-  //   ],
-  // },
+  {
+    text: "AI",
+    icon: "tabler:ai",
+    items: [
+      {
+        text: "GPT",
+        link: "/ai/gpt/",
+        activeMatch: "^/ai/",
+        // icon: "dashicons:html",
+      },
+    ],
+  },
 ];
 
 export default defineNavbarConfig(navbar);

@@ -1,4 +1,4 @@
-<template><div><VPDemoBasic type="vue" title="翻页效果" desc="注册/登录切花翻页效果">
+<template><div><VPDemoBasic type="vue" title="翻页效果" desc="注册/登录切换-翻页效果">
     <DemoPage_vue />
     <template #code>
       <div class="language-vue line-numbers-mode" data-highlighter="shiki" data-ext="vue" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-vue"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">template</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>

@@ -13,10 +13,11 @@
 </ul>
 <h2 id="选择器优先级" tabindex="-1"><a class="header-anchor" href="#选择器优先级"><span>选择器优先级</span></a></h2>
 <h3 id="计算方法" tabindex="-1"><a class="header-anchor" href="#计算方法"><span>计算方法</span></a></h3>
-<p>用 1 表示派生选择器的优先级
-用 10 表示类选择器的优先级
-用 100 标示 ID 选择器的优先级</p>
+<p>用 1 表示派生选择器的优先级</p>
+<p>用 10 表示类选择器的优先级</p>
+<p>用 100 标示 ID 选择器的优先级</p>
 <h2 id="css-选择器解析-从右往左解析" tabindex="-1"><a class="header-anchor" href="#css-选择器解析-从右往左解析"><span>CSS 选择器解析：从右往左解析</span></a></h2>
+<p><VPLink href="../../4.%E6%B5%8F%E8%A7%88%E5%99%A8/3.css%E8%A7%A3%E6%9E%90.md">浏览器-css 解析</VPLink></p>
 </div></template>
 
 

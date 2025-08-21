@@ -148,7 +148,7 @@ export default plumeTheme({
     // audioReader: true, // 启用嵌入音频朗读功能 语法 @[audioReader](url)
     // icon: { provider: "iconify" }, // 启用内置图标语法  ::icon-name::
     // table: true, // 启用表格增强容器语法 ::: table
-    // codepen: true, // 启用嵌入 codepen 语法 @[codepen](user/slash)
+    codepen: true, // 启用嵌入 codepen 语法 @[codepen](user/slash)
     // replit: true, // 启用嵌入 replit 语法 @[replit](user/repl-name)
     // codeSandbox: true, // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
     // jsfiddle: true, // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)

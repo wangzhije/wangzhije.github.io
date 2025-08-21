@@ -10,21 +10,33 @@ config:
     avatar: ./images/avatar.jpeg
     # background:
     nav:
-      - text: 博客
-        link: /blog/
-        icon: material-symbols:menu-book
+      # - text: 博客
+      #   link: /blog/
+      #   icon: material-symbols:menu-book
 
       # - text: 分类
       #   link: /blog/categories/
       #   icon: ph:tree-structure-bold
 
+      - text: 前端
+        link: /frontend/start/
+        icon: bi:credit-card-2-front-fill
+
+      - text: 操作系统
+        link: /os/
+        icon: ix:operating-system
+
+      - text: 计算机网络
+        link: /os/
+        icon: picon:network
+
+      - text: AI
+        link: /ai/gpt/
+        icon: tabler:ai
+
       - text: 站点导航
         link: /sites-map/
         icon: mdi:roadmap
-
-      # - text: 备忘录
-      #   link: /memorandum/
-      #   icon: emojione-monotone:memo
 
       # - text: 开源
       #   link: /projects/
