@@ -1,42 +1,61 @@
-# my-vuepress-site
+<!-- # Hi Here 👋 -->
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+<!--
+**wangzhije/wangzhije** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-## Install
+Here are some ideas to get you started:
 
-```sh
-npm i
-```
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
-## Usage
+# Intro
 
-```sh
-# start dev server
-npm run docs:dev
-# build for production
-npm run docs:build
-# preview production build in local
-npm run docs:preview
-# update vuepress and theme
-npm run vp-update
-```
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Hello,I'm%20wangzhijie&section=header&reversal=true&textBg=false&animation=fadeIn&desc=A%20Frontend%20Developer&descAlign=50&fontAlignY=32&descAlignY=54">
 
-## Deploy to GitHub Pages
+<!-- ## Frontend Stacks -->
 
-The plume theme has been created with GitHub Actions: `.github/workflows/docs-deploy.yml`. You also need to make the following settings in the GitHub repository:
+## Stacks
 
-- [ ] `settings > Actions > General`, Scroll to the bottom of the page, under `Workflow permissions`, check `Read and write permissions`, and click the save button.
+<picture>
+<img src="https://skillicons.dev/icons?i=html,css,less,scss,windicss,bootstrap,js,babel,ts,vue,nuxtjs,react,nextjs,angular,webpack,vite,rollup,gulp,npm,yarn,pnpm,nodejs,express,nestjs">
+</picture>
 
-- [ ] `settings > Pages`, In `Build and deployment`, select `Deploy from a branch` for `Source`, choose `gh-pages` for `Branch`, and click the save button.
-  (The `gh-pages` branch may not exist upon first creation. You can complete the above setup first, push the code to the main branch, wait for `github actions` to finish, and then proceed with the setup.)
+<!-- ## BackEnd Stacks
 
-- [ ] Modify the `base` option in `docs/.vuepress/config.ts`:
-  - If you are planning to deploy to `https://<USERNAME>.github.io/`, you can skip this step as `base` defaults to `"/"`.
-  - If you are planning to deploy to `https://<USERNAME>.github.io/<REPO>/`, meaning your repository URL is `https://github.com/<USERNAME>/<REPO>`, set `base` to `"/<REPO>/"`.
+<picture>
+<img src="https://skillicons.dev/icons?
+i=
+java,
+mysql,redis
+">
+</picture> -->
 
-To customize a domain name, please refer to [Github Pages](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+## Tools
 
-## Documents
+<picture>
+<img src="https://skillicons.dev/icons?i=git,githubactions,vscode,webstorm,idea">
+</picture>
 
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+<!-- ## Analysis
+
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=wangzhije&show_icons=true&hide_border=true&line_height=24&theme=dark&t=1"
+    media="(prefers-color-scheme: dark)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=wangzhije&show_icons=true&hide_border=true&line_height=24&t=1" />
+</picture>
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=wangzhije&layout=compact&hide_border=true&langs_count=8&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wangzhije&layout=compact&hide_border=true&langs_count=8" />
+</picture> -->
