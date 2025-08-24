@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useSessionStorage } from "@vueuse/core";
 import { onMounted, onUnmounted, ref } from "vue";
+// import banner1 from "../../public/banner/banner1.webp";
+// import banner2 from "../../public/banner/banner2.webp";
 
 const list = ref<string[]>([]);
 const cache = useSessionStorage<string[]>(
@@ -48,7 +50,7 @@ async function fetchBingList() {
   <div class="landing-bg">
     <div style="width: 100%; height: 100%">
       <Swiper
-        :items="['/banner/banner1.webp', '/banner/banner2.webp']"
+        :items="['/banner/banner1.webp', '/banner/banner1.webp']"
         :navigation="false"
         :pagination="false"
         :swipe="false"

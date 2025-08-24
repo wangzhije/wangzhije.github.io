@@ -1,3 +1,16 @@
 import comp from "/Users/wangzhijie/Desktop/myspace/wangzhije.github.io/docs/.vuepress/.temp/pages/frontend/browser/lh4qfjf8/index.html.vue"
-const data = JSON.parse("{\"path\":\"/frontend/browser/lh4qfjf8/\",\"title\":\"浏览器存储\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"浏览器存储\",\"createTime\":\"2023/05/25 15:28:27\",\"permalink\":\"/frontend/browser/lh4qfjf8/\",\"tags\":[\"浏览器\"]},\"readingTime\":{\"minutes\":0.36,\"words\":108},\"git\":{\"createdTime\":1668216325000,\"updatedTime\":1755609321000,\"contributors\":[{\"name\":\"wangzhijie\",\"username\":\"wangzhijie\",\"email\":\"1662285571@qq.com\",\"commits\":1,\"avatar\":\"https://avatars.githubusercontent.com/wangzhijie?v=4\",\"url\":\"https://github.com/wangzhijie\"},{\"name\":\"王志杰\",\"username\":\"\",\"email\":\"wangzhijie@wangzhijiedeMacBook-Air.local\",\"commits\":1,\"avatar\":\"https://gravatar.com/avatar/20fcaa5bda6c4e5c80745c9999b7c3cb416609636f8769c329005d42fb7cb6c8?d=retro\"},{\"name\":\"wangzhije\",\"username\":\"wangzhije\",\"email\":\"1662285571@qq.com\",\"commits\":1,\"avatar\":\"https://avatars.githubusercontent.com/wangzhije?v=4\",\"url\":\"https://github.com/wangzhije\"}]},\"filePathRelative\":\"notes/1.frontend/4.浏览器/7.浏览器存储.md\",\"headers\":[]}")
+const data = JSON.parse("{\"path\":\"/frontend/browser/lh4qfjf8/\",\"title\":\"浏览器存储\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"浏览器存储\",\"createTime\":\"2023/05/25 15:28:27\",\"permalink\":\"/frontend/browser/lh4qfjf8/\",\"tags\":[\"浏览器\"]},\"readingTime\":{\"minutes\":0.36,\"words\":108},\"git\":{},\"filePathRelative\":\"notes/1.frontend/4.浏览器/7.浏览器存储.md\",\"headers\":[]}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
