@@ -22,13 +22,13 @@ config:
         link: /frontend/start/
         icon: bi:credit-card-2-front-fill
 
-      - text: 操作系统
-        link: /os/
-        icon: ix:operating-system
+      # - text: 操作系统
+      #   link: /os/
+      #   icon: ix:operating-system
 
-      - text: 计算机网络
-        link: /os/
-        icon: picon:network
+      # - text: 计算机网络
+      #   link: /os/
+      #   icon: picon:network
 
       - text: AI
         link: /ai/gpt/

@@ -48,7 +48,7 @@ async function fetchBingList() {
   <div class="landing-bg">
     <div style="width: 100%; height: 100%">
       <Swiper
-        :items="['./banner/banner1.webp', './banner/banner2.webp']"
+        :items="['/banner/banner1.webp', '/banner/banner2.webp']"
         :navigation="false"
         :pagination="false"
         :swipe="false"

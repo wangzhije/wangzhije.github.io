@@ -10,14 +10,14 @@ tags:
 
 ## 常用属性
 
-| 属性        |                                               说明 |
-| ----------- | -------------------------------------------------: | --- | ------- |
-| name        |                                       frame 的名称 |
-| width       |                                  设置 frame 的宽度 |
-| height      |                                  设置 frame 的高度 |
-| src         |                          设置在 frame 中显示的页面 |
-| frameborder | 是否显示 frame 的边框（0：不显示边框 1：显示边框） |
-| scrolling   |                    是否显示 frame 中的滚动条（ yes | no  | auto ） |
+| 属性        | 说明   |
+| --------   | -----:  |
+| name     | frame 的名称 |
+| width        |   设置 frame 的宽度   |
+| height        |    设置 frame 的高度    |
+| src         |                          设置在 frame 中显示的页面 |  
+| frameborder | 是否显示 frame 的边框（0：不显示边框 1：显示边框） |  
+| scrolling   |                    是否显示 frame 中的滚动条（yes/no/auto）   | 
 
 ## iframe 使用方式
 

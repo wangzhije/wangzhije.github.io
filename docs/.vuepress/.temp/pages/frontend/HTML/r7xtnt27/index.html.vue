@@ -1,12 +1,38 @@
 <template><div><h2 id="常用属性" tabindex="-1"><a class="header-anchor" href="#常用属性"><span>常用属性</span></a></h2>
-<p>| 属性        |                                               说明 |
-| ----------- | -------------------------------------------------: | --- | ------- |
-| name        |                                       frame 的名称 |
-| width       |                                  设置 frame 的宽度 |
-| height      |                                  设置 frame 的高度 |
-| src         |                          设置在 frame 中显示的页面 |
-| frameborder | 是否显示 frame 的边框（0：不显示边框 1：显示边框） |
-| scrolling   |                    是否显示 frame 中的滚动条（ yes | no  | auto ） |</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th style="text-align:right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td style="text-align:right">frame 的名称</td>
+</tr>
+<tr>
+<td>width</td>
+<td style="text-align:right">设置 frame 的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td style="text-align:right">设置 frame 的高度</td>
+</tr>
+<tr>
+<td>src</td>
+<td style="text-align:right">设置在 frame 中显示的页面</td>
+</tr>
+<tr>
+<td>frameborder</td>
+<td style="text-align:right">是否显示 frame 的边框（0：不显示边框 1：显示边框）</td>
+</tr>
+<tr>
+<td>scrolling</td>
+<td style="text-align:right">是否显示 frame 中的滚动条（yes/no/auto）</td>
+</tr>
+</tbody>
+</table>
 <h2 id="iframe-使用方式" tabindex="-1"><a class="header-anchor" href="#iframe-使用方式"><span>iframe 使用方式</span></a></h2>
 <h3 id="html-中嵌入-iframe" tabindex="-1"><a class="header-anchor" href="#html-中嵌入-iframe"><span>HTML 中嵌入 iframe</span></a></h3>
 <div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code class="language-html"><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">iframe</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">iframeId</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">iframeName</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> src</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">http://wangzhije.github.io/xxl/</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">>&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">iframe</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>

@@ -45,6 +45,36 @@ const navbar = [
     ],
   },
   {
+    text: "开发工具",
+    icon: "clarity:tools-solid",
+    items: [
+      {
+        text: "Git",
+        link: "/tools/git/start/",
+        activeMatch: "^/tools/git/",
+        icon: "teenyicons:git-solid",
+      },
+      {
+        text: "Github",
+        link: "/tools/github/start/",
+        activeMatch: "^/tools/github/",
+        icon: "teenyicons:git-solid",
+      },
+      {
+        text: "VSCode",
+        link: "/tools/vscode/start/",
+        activeMatch: "^/tools/vscode/",
+        icon: "file-icons:vscode",
+      },
+      {
+        text: "IDEA",
+        link: "/tools/idea/start/",
+        activeMatch: "^/tools/vscode/",
+        icon: "simple-icons:intellijidea",
+      },
+    ],
+  },
+  {
     text: "前端",
     icon: "bi:credit-card-2-front-fill",
     items: [
@@ -128,6 +158,18 @@ const navbar = [
       },
     ],
   },
+  // {
+  //   text: "专题",
+  //   icon: "material-symbols:topic",
+  //   items: [
+  //     {
+  //       text: "设计模式",
+  //       link: "/frontend/javascript/620w0rmd/",
+  //       // activeMatch: "^/frontend/javascript/",
+  //       icon: "streamline-freehand:design-process-draw-pen",
+  //     },
+  //   ],
+  // },
 ];
 
 export default defineNavbarConfig(navbar);
