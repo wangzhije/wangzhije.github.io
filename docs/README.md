@@ -18,6 +18,10 @@ config:
       #   link: /blog/categories/
       #   icon: ph:tree-structure-bold
 
+      - text: 开发工具
+        link: /tools/git/start/
+        icon: clarity:tools-solid
+
       - text: 前端
         link: /frontend/start/
         icon: bi:credit-card-2-front-fill
@@ -30,9 +34,9 @@ config:
       #   link: /os/
       #   icon: picon:network
 
-      - text: AI
-        link: /ai/gpt/
-        icon: tabler:ai
+      # - text: AI
+      #   link: /ai/gpt/
+      #   icon: tabler:ai
 
       - text: 站点导航
         link: /sites-map/

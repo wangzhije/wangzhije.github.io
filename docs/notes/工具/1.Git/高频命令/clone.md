@@ -4,13 +4,21 @@ createTime: 2025/08/18 17:41:24
 permalink: /tools/git/qs4vyxbe/
 ---
 
-# Git
+```bash
+# 克隆远端仓库到本地
+git clone <git url>
 
-## Git clone
+# 克隆远端仓库到本地，并同时切换到指定分支 branch1
+git clone <git url> -b branch1
 
-### `git clone` 下载慢的解决方式
+# 克隆远端仓库到本地并指定本地仓库的文件夹名称为 my-project
+git clone <git url> my-project
 
-`git clone --depth 1 <repository>`
+# 只拉取最近一次commit，用于快速clone，查不到commit记录
+git clone --depth 1 <repository>
+```
+
+### `git clone --depth 1 <repository>` 快速clone
 
 - 为什么快？下载的内容少了。
 - 代码是全的吗？是的。完全可以正常开发、拉取、提交

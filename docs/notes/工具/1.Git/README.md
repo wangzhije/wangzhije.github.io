@@ -3,7 +3,10 @@ title: Git
 createTime: 2025/08/18 17:27:09
 permalink: /tools/git/start/
 ---
-# Git
+
+> 分布式版本控制系统
+
+## Git 相关文档
 
 [Git 官方文档](https://git-scm.com/doc)
 
@@ -12,10 +15,6 @@ permalink: /tools/git/start/
 [Git 简明指南](https://www.runoob.com/manual/git-guide/)
 
 [Git 完整命令手册](https://www.runoob.com/manual/github-git-cheat-sheet.pdf)
-
-## 介绍
-
-> 分布式版本控制系统
 
 ## 下载安装
 
@@ -30,21 +29,6 @@ permalink: /tools/git/start/
 ## GitFlow 分支管理模型
 
 ![Git工作流程](./img/git-flow.png)
-
-## 配置
-
-- 三个级别：优先级从高到低
-  - 项目配置：项目根目录下的 `./git/config` 文件
-  - 用户配置：home directory 中的 `~/.gitconfig` 文件
-    - home directory
-      - Windows：一般都是 `C:\用户\<用户名>`
-  - 系统配置：所用用户 `~/gitconfig/`
-- 命令
-  - 设置用户名/邮箱
-    - `git config --[local/global/system] user.name "wangzhijie"`
-    - `git config --[local/global/system] user.email 1662285571@qq.com`
-  - 记住密码
-    - `git config --[local/global/system] credential.helper store`
 
 ## 初始化仓库
 

@@ -146,18 +146,18 @@ const navbar = [
       // },
     ],
   },
-  {
-    text: "AI",
-    icon: "tabler:ai",
-    items: [
-      {
-        text: "GPT",
-        link: "/ai/gpt/",
-        activeMatch: "^/ai/",
-        // icon: "dashicons:html",
-      },
-    ],
-  },
+  // {
+  //   text: "AI",
+  //   icon: "tabler:ai",
+  //   items: [
+  //     {
+  //       text: "GPT",
+  //       link: "/ai/gpt/",
+  //       activeMatch: "^/ai/",
+  //       // icon: "dashicons:html",
+  //     },
+  //   ],
+  // },
   // {
   //   text: "专题",
   //   icon: "material-symbols:topic",

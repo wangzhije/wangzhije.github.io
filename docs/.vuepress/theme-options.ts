@@ -10,9 +10,10 @@ export default plumeTheme({
   outline: "deep",
 
   /* 博客文章页面链接前缀 */
-  // article: "/frontend",
+  article: "/article",
+
   blog: {
-    link: "/notes",
+    link: "/blog",
     include: ["**/*.md"],
     exclude: [],
   },
