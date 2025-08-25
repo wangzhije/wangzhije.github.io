@@ -17,6 +17,9 @@ git config --[local/global/system] --list
 # 记住密码
 git config --[local/global/system] credential.helper store
 
+# 文件区分大小写
+git config --[local/global/system] core.ignorecase fasle
+
 # 通过 alias 配置简写
 ## 例如使用 git co 代替 git checkout
 git config --[local/global/system] alias.co checkout
